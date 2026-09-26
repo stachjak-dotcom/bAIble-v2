@@ -2,7 +2,7 @@
 
 Status: WORKING AUDIT
 
-This audit checks migration claims against the actual current v2 repository.
+This audit checks migration claims against the actual current v2 repository and relevant private implementation evidence before generalizing it into the public bAIble.
 
 ## Corrected contradictions
 
@@ -28,17 +28,29 @@ This audit checks migration claims against the actual current v2 repository.
 
 This correction itself is retained as a concrete forgetting/context-drift case in `LESSONS_LEARNED.md`.
 
-## Verified observations
+### C-004 — Runtime still carries the older RC contract
+**Observed implementation lag:** the private FederAItion runtime still contains a `realityCheck()` contract that combines semantic/perspective alignment with evidence presence, and Watchdog can report missing evidence as a Reality Check concern.
 
-- v0.1 foundation is preserved as a bridge rather than copied wholesale.
-- Public/private separation is explicitly treated as a v2 evolution.
-- rAIda, Watchdog and contextual-layer concepts are later extensions, not original v0.1 foundation.
-- The quotations in `SONG_TWO.md` are documented as historical v0.1 material.
-- `WHEEAILS.md` contains the original six-word action vocabulary.
+**Current state:** GOVERNANCE CORRECTED; IMPLEMENTATION ALIGNMENT STILL REQUIRED.
+
+This is not corrected by renaming documentation alone. Runtime behavior and tests must eventually be reviewed against the RC/FC split without weakening their existing evidence and human-gate protections.
+
+## Verified observations from the FederAItion / UnAiversed hunt
+
+- Runtime distinguishes intent, attempted execution, tool result, observation and verification, and blocks claim inflation between these states.
+- DONE requires a verified epistemic state in the inspected runtime tests.
+- Missing context and differing participant interpretations are explicitly detectable.
+- Durable decisions are recorded with context and review conditions rather than treated as timeless truth.
+- Lesson candidates preserve evidence, limits and a review-required promotion step.
+- Repeated failure was the practical origin of the “frequency is a signal” lesson: recurrence should trigger inspection of the surrounding process rather than endless incident-by-incident compensation.
+- Context continuity and meaning continuity are distinct; preserving records does not guarantee preservation of interpretation.
+- Historical meaning should be refined, contradicted or superseded with provenance rather than silently rewritten.
 
 ## Redundancy candidates
 
 `START_HERE.md`, `AGENT_QUICK_START.md`, `ONBOARDING_FLOW.md`, `NEW_USER_AGENT.md`, `BOOTSTRAP.md`, `REPOSITORY_BOOTSTRAP.md` and `WHEEAILS.md` overlap substantially. Their distinct information should be extracted into canonical onboarding, language, bootstrap, role and template documents rather than copied wholesale.
+
+Private FederAItion currently also contains two substantially overlapping feature-completeness lesson candidates. Treat this as a consolidation signal, not as permission to delete historical evidence.
 
 ## Principles
 
@@ -46,10 +58,12 @@ A migration document saying something was “fixed” is not proof that the curr
 
 A surviving term is also not proof that its original meaning survived.
 
+A record, relationship or repeated occurrence is not automatically truth or verification.
+
 ## Next checks
 
 1. compare active v2 navigation with the preserved foundation;
 2. identify dead and duplicate routes;
 3. perform public/private review;
-4. inspect FederAItion and UnAiversed for concepts absent from v2;
+4. align FederAItion runtime semantics with the restored RC / FC split;
 5. run contradiction and meaning-drift scan again after consolidation.
