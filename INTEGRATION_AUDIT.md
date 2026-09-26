@@ -69,3 +69,12 @@ The current v2 is a living baseline: strong enough to use, explicit about remain
 ## Current bounded runtime evidence
 
 The dedicated rAIda integration-support task `zzzz-baible-v2-integration-verify-001` completed successfully in GitHub Actions run `36248402719` and recorded a passing runtime-test evidence artifact. This verifies the exercised runtime path only; it does not prove editorial completeness of bAIble v2.
+
+
+## Latest bounded verification
+
+The human-authorized task `BAIBLE-V2-LIVING-BASELINE-001` completed successfully in GitHub Actions run `36250143075`; evidence was recorded as `orchestrator/evidence/BAIBLE-V2-LIVING-BASELINE-001-36250143075.json` with `result: passed` and `nextTask: null`.
+
+The companion smoke-test run `36250143030` also completed successfully, including runtime tests, Watchdog CLI checks, queue contract checks and UnAiversed validation.
+
+Boundary: this verifies the exercised runtime path. It does not convert documentation completeness or semantic consistency into a runtime fact.
