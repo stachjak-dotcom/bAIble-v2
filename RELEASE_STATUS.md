@@ -33,4 +33,4 @@ The strongest accurate claim is:
 
 **Public governance, navigation, context/relationship model and coordination boundaries are integrated; known implementation-alignment gaps remain explicit rather than hidden.**
 
-A dedicated bounded rAIda task completed successfully in GitHub Actions run `36248402719`. This is runtime evidence, not proof that every editorial or semantic claim in the public repository is correct.
+A dedicated bounded rAIda task `BAIBLE-V2-LIVING-BASELINE-001` completed successfully in GitHub Actions run `36250143075`. The companion smoke-test run `36250143030` also completed successfully, including the runtime suite, Watchdog CLI smoke checks, queue contract smoke check and UnAiversed validation. This is runtime evidence only; it is not proof that every editorial or semantic claim in the public repository is correct.
