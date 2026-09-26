@@ -92,6 +92,13 @@ A concise historical evolution is:
 
 `MAP ALIGNMENT → IDENTIFY DIVERGENCE → CLASSIFY THE DIVERGENCE → APPLY THE NEEDED CHECK → UPDATE THE MAP`
 
+## Related mechanism
+
+For factual/evidential verification use **Fact Check (FC)** in `FACT_CHECK.md`.
+
+- RC asks: **Do we understand the same thing in the same way?**
+- FC asks: **Is this claim actually supported?**
+
 ## Boundary
 
 Reality Check is not another agent or personality.
