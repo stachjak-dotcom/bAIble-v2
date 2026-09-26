@@ -48,6 +48,16 @@ Migration documents are useful evidence, but the current README/navigation must 
 
 Status: CONTROLLED BY CURRENT NAVIGATION + SELF-AUDIT.
 
+### C-004 — Current push dispatcher selects the lexicographically last queue file
+During the bounded bAIble-v2 verification request, a newly added queue task was not executed because the push workflow selects `readdirSync(...).sort().pop()`. A legacy lowercase filename sorted after the intended uppercase task and was executed instead.
+
+Status: OBSERVED AND REPRODUCED. The intended task was later explicitly made last in the current ordering and successfully executed. The dispatcher selection rule remains a private runtime design issue to fix separately.
+
+### C-005 — Named verifier role was not defined in the runtime role registry
+The first intended task run reached the correct queue item but failed preflight because `rAIda verifier` had no built-in role requirements. Supplying explicit `roleRequirements` preserved the bounded verifier role without modifying runtime role definitions.
+
+Status: OBSERVED; BOUNDED TASK CORRECTED. General role-registration design remains private runtime work.
+
 ## Epistemic rule
 
 A successful repository/runtime test does not prove editorial completeness. Editorial completeness comes from source inventory, contradiction scan, coverage review and human acceptance.
@@ -55,3 +65,7 @@ A successful repository/runtime test does not prove editorial completeness. Edit
 ## Current release posture
 
 The current v2 is a living baseline: strong enough to use, explicit about remaining implementation alignment, and designed to improve through evidence rather than pretending to be finished forever.
+
+## Current bounded runtime evidence
+
+The dedicated rAIda integration-support task `zzzz-baible-v2-integration-verify-001` completed successfully in GitHub Actions run `36248402719` and recorded a passing runtime-test evidence artifact. This verifies the exercised runtime path only; it does not prove editorial completeness of bAIble v2.
