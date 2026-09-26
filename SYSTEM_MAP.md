@@ -1,4 +1,4 @@
-# bAIble v2 — Canonical Ecosystem Map
+# bAIble v2 — Canonical Ecosystem Semantic Model
 
 ## Center
 
@@ -114,6 +114,8 @@ preflight / scope checks / handoffs / evidence / context items / approval gates 
 individual claims, observations, decisions, evidence items, sources, states, limitations, next checks, authority edges and contradictions.
 
 ## Graph rule
+
+This document defines the canonical semantic model. `ECOSYSTEM_GRAPH.json` is its machine-readable seed; `ECOSYSTEM_MAP.md`, `HUMAN_VIEW.md`, `AI_VIEW.md` and future purpose-specific maps are views over the same model.
 
 The graph is canonical; visualizations are views.
 
