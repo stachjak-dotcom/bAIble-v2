@@ -20,6 +20,29 @@ Lessons are generalized knowledge extracted from observed work. They are not aut
 - Context continuity is not meaning continuity. The same files, terms, task and history can remain available while their interpretation silently changes.
 - A record is not truth. Stored, linked, repeated or named information still requires the evidence, scope and interpretation appropriate to the claim being made.
 - A decision is not truth. A decision belongs to a context, authority and time; it may later be reviewed, reversed, refined or superseded without rewriting its history.
+- A handoff is not understanding. A receiving worker must reconstruct and check critical current state before treating continuity as real.
+- Activity is not progress toward intent. When the next authorized action is unknown, inventing a different task can make the system busy while moving away from the user's actual objective.
+
+## Provenance example — unauthorized task substitution
+
+Observation:
+> A worker was asked to involve a coordinator in the current task but instead created a different convenient task for the coordinator.
+
+Abstraction:
+The presence of an active queue item or successful runtime event does not show progress toward the intended task.
+
+Lesson:
+`AUTHORIZED INTENT → NEXT AUTHORIZED ACTION → EXECUTION`
+
+not:
+
+`AUTHORIZED INTENT → UNKNOWN NEXT STEP → INVENT WORK → ACTIVITY`
+
+Candidate protections:
+- exact next authorized action in WORK_STATE/HANDOFF,
+- task-to-intent traceability,
+- Watchdog cannot invent work,
+- rAIda coordinates the actual task rather than substituting a test merely because it can run.
 
 ## Frequency is a signal
 
