@@ -1,0 +1,346 @@
+{
+  "version": "2.0-living",
+  "purpose": "Public canonical seed graph for the bAIble + FederAItion + UnAiversed ecosystem. It describes reusable roles and relationships, not private project state.",
+  "epistemic_rule": "Relations are context records, not automatic truth or authority.",
+  "nodes": [
+    {
+      "id": "hi",
+      "type": "entity",
+      "label": "Human Intelligence",
+      "role": "intent, material decisions, acceptance, intervention gates"
+    },
+    {
+      "id": "ai",
+      "type": "entity",
+      "label": "Artificial Intelligence / Agent",
+      "role": "prepare, reason, execute, record within scope"
+    },
+    {
+      "id": "baible",
+      "type": "system",
+      "label": "bAIble",
+      "role": "governance, language, rules, lessons, reusable workflows"
+    },
+    {
+      "id": "federation",
+      "type": "system",
+      "label": "FederAItion",
+      "role": "runtime, orchestration, durable evidence, operational state"
+    },
+    {
+      "id": "unaiversed",
+      "type": "system",
+      "label": "UnAiversed",
+      "role": "contextual and relational mapping space"
+    },
+    {
+      "id": "raida",
+      "type": "mechanism",
+      "label": "rAIda",
+      "role": "THINK / COORDINATE / REMEMBER-TO-CHECK"
+    },
+    {
+      "id": "watchdog",
+      "type": "mechanism",
+      "label": "Watchdog",
+      "role": "CONTINUE / MONITOR / ESCALATE"
+    },
+    {
+      "id": "rc",
+      "type": "mechanism",
+      "label": "Reality Check",
+      "role": "align human and AI working maps"
+    },
+    {
+      "id": "fc",
+      "type": "mechanism",
+      "label": "Fact Check",
+      "role": "verify claims, facts, assumptions and evidence"
+    },
+    {
+      "id": "verification",
+      "type": "mechanism",
+      "label": "Verification",
+      "role": "check whether required result actually holds"
+    },
+    {
+      "id": "wolf",
+      "type": "persona",
+      "label": "Wolf",
+      "role": "ORIENT / TEACH / ONBOARD"
+    },
+    {
+      "id": "wheeails",
+      "type": "mechanism",
+      "label": "WheeAIls",
+      "role": "relevant reminders and support, not authority"
+    },
+    {
+      "id": "evidence",
+      "type": "concept",
+      "label": "Evidence"
+    },
+    {
+      "id": "context-item",
+      "type": "contract",
+      "label": "Context Item"
+    },
+    {
+      "id": "handoff",
+      "type": "contract",
+      "label": "Handoff"
+    },
+    {
+      "id": "public-private",
+      "type": "boundary",
+      "label": "Public / Private Boundary"
+    },
+    {
+      "id": "context-drift",
+      "type": "risk",
+      "label": "Context Drift"
+    },
+    {
+      "id": "meaning-drift",
+      "type": "risk",
+      "label": "Meaning Drift"
+    },
+    {
+      "id": "scope-drift",
+      "type": "risk",
+      "label": "Scope Drift"
+    },
+    {
+      "id": "false-done",
+      "type": "risk",
+      "label": "False Done"
+    },
+    {
+      "id": "record-truth",
+      "type": "risk",
+      "label": "Record ≠ Truth"
+    },
+    {
+      "id": "yellow-no-explanation",
+      "type": "risk",
+      "label": "Yellow Without Explanation"
+    }
+  ],
+  "relations": [
+    {
+      "id": "r1",
+      "subject": "hi",
+      "predicate": "createsWith",
+      "object": "ai"
+    },
+    {
+      "id": "r2",
+      "subject": "hi",
+      "predicate": "participatesIn",
+      "object": "baible"
+    },
+    {
+      "id": "r3",
+      "subject": "hi",
+      "predicate": "participatesIn",
+      "object": "federation"
+    },
+    {
+      "id": "r4",
+      "subject": "hi",
+      "predicate": "participatesIn",
+      "object": "unaiversed"
+    },
+    {
+      "id": "r5",
+      "subject": "ai",
+      "predicate": "participatesIn",
+      "object": "baible"
+    },
+    {
+      "id": "r6",
+      "subject": "ai",
+      "predicate": "participatesIn",
+      "object": "federation"
+    },
+    {
+      "id": "r7",
+      "subject": "ai",
+      "predicate": "participatesIn",
+      "object": "unaiversed"
+    },
+    {
+      "id": "r8",
+      "subject": "baible",
+      "predicate": "constrains",
+      "object": "raida"
+    },
+    {
+      "id": "r9",
+      "subject": "federation",
+      "predicate": "contains",
+      "object": "raida"
+    },
+    {
+      "id": "r10",
+      "subject": "federation",
+      "predicate": "contains",
+      "object": "watchdog"
+    },
+    {
+      "id": "r11",
+      "subject": "unaiversed",
+      "predicate": "represents",
+      "object": "context-item"
+    },
+    {
+      "id": "r12",
+      "subject": "raida",
+      "predicate": "remembersToCheck",
+      "object": "rc"
+    },
+    {
+      "id": "r13",
+      "subject": "raida",
+      "predicate": "invokesWhenNeeded",
+      "object": "fc"
+    },
+    {
+      "id": "r14",
+      "subject": "watchdog",
+      "predicate": "monitors",
+      "object": "raida"
+    },
+    {
+      "id": "r15",
+      "subject": "watchdog",
+      "predicate": "escalatesTo",
+      "object": "hi"
+    },
+    {
+      "id": "r16",
+      "subject": "rc",
+      "predicate": "comparesMapsOf",
+      "object": "hi"
+    },
+    {
+      "id": "r17",
+      "subject": "rc",
+      "predicate": "comparesMapsOf",
+      "object": "ai"
+    },
+    {
+      "id": "r18",
+      "subject": "fc",
+      "predicate": "verifies",
+      "object": "evidence"
+    },
+    {
+      "id": "r19",
+      "subject": "verification",
+      "predicate": "dependsOn",
+      "object": "evidence"
+    },
+    {
+      "id": "r20",
+      "subject": "handoff",
+      "predicate": "preserves",
+      "object": "context-item"
+    },
+    {
+      "id": "r21",
+      "subject": "public-private",
+      "predicate": "constrains",
+      "object": "baible"
+    },
+    {
+      "id": "r22",
+      "subject": "wolf",
+      "predicate": "teaches",
+      "object": "baible"
+    },
+    {
+      "id": "r23",
+      "subject": "wheeails",
+      "predicate": "surfacesRelevant",
+      "object": "context-item"
+    },
+    {
+      "id": "r24",
+      "subject": "context-drift",
+      "predicate": "exposesRiskTo",
+      "object": "unaiversed"
+    },
+    {
+      "id": "r25",
+      "subject": "meaning-drift",
+      "predicate": "exposesRiskTo",
+      "object": "rc"
+    },
+    {
+      "id": "r26",
+      "subject": "scope-drift",
+      "predicate": "exposesRiskTo",
+      "object": "raida"
+    },
+    {
+      "id": "r27",
+      "subject": "false-done",
+      "predicate": "exposesRiskTo",
+      "object": "verification"
+    },
+    {
+      "id": "r28",
+      "subject": "record-truth",
+      "predicate": "exposesRiskTo",
+      "object": "context-item"
+    },
+    {
+      "id": "r29",
+      "subject": "yellow-no-explanation",
+      "predicate": "exposesRiskTo",
+      "object": "fc"
+    },
+    {
+      "id": "r30",
+      "subject": "yellow-no-explanation",
+      "predicate": "exposesRiskTo",
+      "object": "rc"
+    }
+  ],
+  "view_hints": {
+    "human": [
+      "hi",
+      "baible",
+      "rc",
+      "fc",
+      "verification",
+      "wolf",
+      "wheeails",
+      "public-private",
+      "false-done"
+    ],
+    "ai": [
+      "ai",
+      "baible",
+      "raida",
+      "context-item",
+      "handoff",
+      "rc",
+      "fc",
+      "verification",
+      "watchdog",
+      "scope-drift"
+    ],
+    "builder": [
+      "baible",
+      "federation",
+      "unaiversed",
+      "raida",
+      "watchdog",
+      "context-item",
+      "evidence",
+      "public-private"
+    ]
+  }
+}
