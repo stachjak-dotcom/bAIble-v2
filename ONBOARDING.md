@@ -36,3 +36,9 @@ DO HUMAN AND AI STILL SHARE THE SAME WORKING MAP?
 WHAT AUTHORIZED TRANSITION COMES NEXT?
 
 Use only the architecture needed for the current problem. Add coordination, contextual mapping, integrations or monitoring when the real workflow demonstrates the need.
+
+## Choose the view
+
+For human orientation use HUMAN_VIEW.md.
+For agent/AI operational orientation use AI_VIEW.md.
+Both views derive from the same semantic model in SYSTEM_MAP.md and RELATIONSHIP_MODEL.md.
