@@ -31,3 +31,11 @@ Lifecycle status is not proof. `CONFIRMED` must still have evidence appropriate 
 ## Scope rule
 
 Do not expand a Context Item's scope merely because another item is related to it. Relations explain connection; they do not silently transfer authority, visibility or truth.
+
+## Relation metadata
+
+A material relation may carry origin, scope, time/version, visibility, evidence, status, limitation and nextCheck.
+
+## Contradiction contract
+
+When a material contradiction is found, record both claims and sources, conflict type, affected scope, unresolved point, available evidence, resolving check and whether the contradiction blocks action. A generic warning/yellow status without the underlying conflict is insufficient.
