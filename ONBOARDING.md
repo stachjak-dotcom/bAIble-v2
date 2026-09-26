@@ -8,8 +8,9 @@
 4. Define role, scope, authority, evidence and verification.
 5. Take one small reversible step.
 6. Verify the actual result.
-7. Run Reality Check when the conclusion matters.
-8. Persist important decisions, evidence and lessons.
+7. Run Fact Check when important claims or evidence need verification.
+8. Run Reality Check when alignment, interpretation or context may have drifted.
+9. Persist important decisions, evidence and lessons.
 
 ## Levels
 
@@ -31,6 +32,7 @@ WHAT DO I KNOW?
 WHAT DO I NOT KNOW?
 WHAT EVIDENCE MUST I PRODUCE?
 WHO/WHAT VERIFIES IT?
+DO HUMAN AND AI STILL SHARE THE SAME WORKING MAP?
 WHAT AUTHORIZED TRANSITION COMES NEXT?
 
 Use only the architecture needed for the current problem. Add coordination, contextual mapping, integrations or monitoring when the real workflow demonstrates the need.
