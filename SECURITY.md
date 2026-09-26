@@ -1,9 +1,23 @@
 # bAIble v2 — Security
 
-Never publish passwords, API keys, tokens, private keys, cookies, personal identifiers, private conversation exports, confidential customer data, hidden context or private runtime evidence.
+## Never publish
 
-Before sharing, ask whether the material is private, reveals an access path, depends on hidden context, can be reproduced by another person, and whether the specificity is necessary.
+Passwords, API keys, tokens, private keys, cookies, personal identifiers, private conversation exports, confidential customer data, private repository contents, hidden context, private runtime evidence or secrets in logs.
 
-Use least privilege. Prefer read-only inspection when writing is unnecessary. Require explicit approval for destructive or irreversible actions.
+## Before sharing
+
+Ask:
+
+- Is this private or personal?
+- Does it reveal an access path?
+- Does it depend on hidden context?
+- Is the specificity necessary?
+- Can the public claim be supported without exposing private evidence?
+
+## Access discipline
+
+Use least privilege. Prefer read-only inspection when writing is unnecessary. Keep credentials outside source control. Separate environments where practical. Require explicit approval for destructive, irreversible or high-impact actions.
 
 Security must be enforced by the real access layer. UI visibility is not authorization.
+
+A public/private boundary failure blocks publication until resolved.
