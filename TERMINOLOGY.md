@@ -16,8 +16,9 @@
 | Context Item | Addressable context with provenance, scope, status and relations | Established v2 contract |
 | Context drift | Shift in current interpretation caused by lost, partial or reweighted context | Failure mode |
 | Meaning drift | A term survives while its original purpose or meaning is silently replaced | Failure mode |
+| Semantic continuity | Preservation of meaning across time, context loss, handoffs or representation changes; stronger than merely retaining the same records | Evolving practice |
 | Scope drift | Unapproved expansion of work | Failure mode |
 | Agent echo chamber | Apparent agreement caused by shared evidence or assumptions | Generalized lesson |
 | White-couch failure | Attractive coherent interpretation built on missing evidence | Generalized lesson |
 
-Names are not dependencies. Implementations may use different names.
+Names are not dependencies. Implementations may use different names. A surviving name or record does not prove that its meaning survived.
