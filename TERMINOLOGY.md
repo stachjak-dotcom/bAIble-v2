@@ -28,3 +28,12 @@
 | Yellow without explanation | Warning state without the actual contradiction or missing check | Failure mode |
 
 Names are not dependencies. Implementations may use different names. A surviving name, record or relation does not prove semantic continuity.
+
+## Additional ecosystem terms
+
+- **HI** — Human Intelligence; active participant holding intent, values, material decisions and acceptance authority where applicable.
+- **AI** — Artificial Intelligence; active participant performing bounded interpretation, assistance, execution and checking according to role/scope.
+- **Human View** — human-oriented navigation over the shared semantic graph.
+- **AI View** — agent-oriented operational navigation over the same graph.
+- **Canonical graph** — shared semantic relationship model; not itself automatic truth.
+- **Failure mode / požírač hvězd** — recurring process distortion attached to affected objects/transitions rather than treated as detached decoration.
