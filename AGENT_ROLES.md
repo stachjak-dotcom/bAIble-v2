@@ -13,11 +13,12 @@ These roles were explicit in bAIble v0.1 and remain useful as execution responsi
 
 These are responsibilities, not necessarily separate AI instances.
 
-## Coordination roles
+## Coordination and check mechanisms
 
 - **bAIble** — governance and language.
 - **rAIda** — THINK / COORDINATE / REMEMBER-TO-CHECK.
-- **Reality Check** — VERIFY alignment and evidence boundary.
+- **Reality Check (RC)** — ALIGN: compare human and AI working maps and expose divergence.
+- **Fact Check (FC)** — VERIFY: check claims, facts, assumptions and evidence.
 - **Watchdog** — CONTINUE / MONITOR / ESCALATE.
 - **UnAiversed** — relationships and context maps.
 - **WheeAIls** — relevant reminders.
