@@ -11,7 +11,7 @@ Shortest route:
 Read:
 1. [ORIGIN_AND_PURPOSE.md](ORIGIN_AND_PURPOSE.md)
 2. [HUMAN_VIEW.md](HUMAN_VIEW.md)
-3. [ECOSYSTEM_MAP.md](ECOSYSTEM_MAP.md)
+3. [SYSTEM_MAP.md](SYSTEM_MAP.md)
 4. [ONBOARDING.md](ONBOARDING.md)
 5. [REALITY_CHECK.md](REALITY_CHECK.md)
 6. [FACT_CHECK.md](FACT_CHECK.md)
@@ -23,11 +23,13 @@ Read:
 1. [BIBLE.md](BIBLE.md)
 2. [AI_VIEW.md](AI_VIEW.md)
 3. [ARCHITECTURE.md](ARCHITECTURE.md)
-4. [COORDINATION_PROTOCOL.md](COORDINATION_PROTOCOL.md)
-5. [CONTEXT_AND_MEMORY.md](CONTEXT_AND_MEMORY.md)
-6. [HANDOFF.md](HANDOFF.md)
-7. [VERIFICATION.md](VERIFICATION.md)
-8. [AGENT_EVALS.md](AGENT_EVALS.md)
+4. [AGENT_PROFILE.md](AGENT_PROFILE.md)
+5. [COORDINATION_PROTOCOL.md](COORDINATION_PROTOCOL.md)
+6. [CONTEXT_AND_MEMORY.md](CONTEXT_AND_MEMORY.md)
+7. [WORK_CONTINUITY.md](WORK_CONTINUITY.md)
+8. [HANDOFF.md](HANDOFF.md)
+9. [VERIFICATION.md](VERIFICATION.md)
+10. [AGENT_EVALS.md](AGENT_EVALS.md)
 
 ## Core distinctions
 
@@ -39,6 +41,10 @@ Read:
 The public bAIble is not project memory. Project context, implementation, run evidence and secrets belong in appropriate private systems.
 
 rAIda coordinates. UnAiversed maps relationships. Watchdog monitors observable continuity. WheeAIls surface relevant support. Wolf teaches orientation.
+
+When resuming prior work, do not treat a coherent handoff as understanding:
+
+`HANDOFF → RECONSTRUCT → CHECK → CONTINUE`
 
 ## Living-document rule
 
