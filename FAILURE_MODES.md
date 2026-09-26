@@ -22,6 +22,18 @@ A plausible report, partial implementation or passing local test is treated as c
 
 Protection: observable completion criteria, evidence, independent verification where appropriate, explicit acceptance.
 
+## False Continuity
+A coherent handoff, persistent chat, familiar identifier or recovered state creates the feeling that the new worker understands the previous work when it has only inherited a record of someone else's interpretation.
+
+Protection: `HANDOFF → RECONSTRUCT → CHECK → CONTINUE`; verify critical state against actual sources; preserve contradictions and missing context.
+
+## Activity Substitution
+The system performs visible work that is not the next authorized step toward the human's intent — for example, inventing a convenient task because the required next transition is unknown.
+
+Protection: exact next authorized action, task-to-intent traceability, scope check, STOP/RECOVER/ESCALATE when the next step is not authorized.
+
+Activity ≠ progress toward intent.
+
 ## Record ≠ Truth
 Stored context, linked nodes or repeated notes are mistaken for factual truth.
 
