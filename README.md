@@ -31,13 +31,15 @@ HI (Human Intelligence) and AI (Artificial Intelligence) are active participants
 - START_HERE.md — shortest orientation.
 - BIBLE.md — core rules.
 - ARCHITECTURE.md — responsibility boundaries.
-- SYSTEM_MAP.md — Level-4 ecosystem model.
+- SYSTEM_MAP.md — single canonical Level-4 ecosystem model.
 - HUMAN_VIEW.md — human navigation.
 - AI_VIEW.md — AI/agent navigation.
+- AGENT_PROFILE.md — task-local operating boundary for a concrete agent.
 - RELATIONSHIP_MODEL.md — typed relations and contradiction contract.
 - FAILURE_MODES.md — recurring distortions / “požírači hvězd”.
 - CONTEXT_AND_MEMORY.md — durable context discipline.
 - CONTEXT_ITEM.md — addressable context contract.
+- WORK_CONTINUITY.md — WORK_STATE / WORK_LOG / HANDOFF recovery model.
 - REALITY_CHECK.md — human/AI map alignment.
 - FACT_CHECK.md — factual/evidential checking.
 - VERIFICATION.md — required-result verification.
@@ -47,6 +49,8 @@ HI (Human Intelligence) and AI (Artificial Intelligence) are active participants
 - SOURCE_CROSSWALK.md — what was carried forward from bAIble, FederAItion and UnAiversed.
 - BUILD_PLAN.md — current living-v2 construction/verification plan.
 - MILESTONES.md — only history that explains the current structure.
+
+`ECOSYSTEM_MAP.md` is retained only as a compatibility pointer to `SYSTEM_MAP.md`; it is not a second canonical map.
 
 ## Living governance
 
