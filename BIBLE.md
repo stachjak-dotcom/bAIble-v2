@@ -22,3 +22,7 @@ R-019 Prefer small, reversible changes.
 R-020 Learn explicitly: origin, evidence, scope and next check.
 
 Nejdřív pochopit. Potom jednat. Potom doložit. Potom ověřit. Potom se učit.
+R-021 Surface material contradictions explicitly: claims, sources, conflict type, unresolved point and resolving check.
+R-022 Maintain one semantic model with multiple purpose-specific views; a view must not invent a different truth.
+R-023 Relations do not transfer truth, scope, visibility or authority by association.
+R-024 Attach recurring failure modes to the objects/transitions they distort and learn from repeated human workarounds.
