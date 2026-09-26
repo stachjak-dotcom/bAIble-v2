@@ -17,6 +17,31 @@ Lessons are generalized knowledge extracted from observed work. They are not aut
 - Attractive interpretations built on missing evidence remain hypotheses until relevant facts, context and alternatives are checked.
 - A remembered **name** can survive after the context that gave it meaning has been lost. The system may then reconstruct a plausible new meaning from the current context and treat that reconstruction as continuity.
 - User adaptation can hide system failure: if a human repeatedly changes how they prompt in order to compensate for AI drift, apparent collaboration may improve while the underlying continuity problem remains.
+- Context continuity is not meaning continuity. The same files, terms, task and history can remain available while their interpretation silently changes.
+- A record is not truth. Stored, linked, repeated or named information still requires the evidence, scope and interpretation appropriate to the claim being made.
+- A decision is not truth. A decision belongs to a context, authority and time; it may later be reviewed, reversed, refined or superseded without rewriting its history.
+
+## Frequency is a signal
+
+The original practical meaning of **frequency is a signal** came from repeated forgetting and repeated corrective work.
+
+One failure may be an incident. When the same class of failure keeps returning, the useful question changes from:
+
+> “How do we fix this occurrence?”
+
+to:
+
+> **“Why does our way of working keep producing this failure or requiring the same compensation?”**
+
+Repeated failure does not prove its cause. It is a signal to inspect the design of the prompt, context, handoff, workflow, supervision, representation or processing rather than endlessly patching each occurrence.
+
+A related warning is repeated human compensation:
+
+> **If reliable success depends on a human repeatedly supplying the same support wheels, the system may not actually be reliable.**
+
+The same idea applies beyond forgetting. Repeated Watchdog intervention, repeated clarification at the same handoff, repeated onboarding confusion or repeated semantic drift can all signal that the surrounding process deserves redesign.
+
+Frequency therefore means **attention and investigation**, not automatic promotion to a rule.
 
 ## Case study — Reality Check meaning drift
 
@@ -39,6 +64,10 @@ This case is a concrete example of forgetting, context drift and meaning drift o
 
 ## Promotion rule
 
-OBSERVATION → LESSON CANDIDATE → GENERALIZATION CHECK → VALIDATION → PERMANENT LESSON / RULE CANDIDATE.
+Useful learning may originate from an observation, experience, failure, research result or experiment.
 
-A lesson does not become a rule merely because it sounds sensible.
+`OBSERVATION / EXPERIENCE / FAILURE / EXPERIMENT → LESSON CANDIDATE → GENERALIZATION CHECK → VALIDATION → PERMANENT LESSON / RULE CANDIDATE`
+
+An experiment is one path to learning, not a mandatory path for every lesson.
+
+A lesson does not become a rule merely because it sounds sensible or because the same event occurred repeatedly. Preserve origin, evidence, scope, competing interpretations and the next check.
