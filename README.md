@@ -15,7 +15,8 @@ IMPLEMENTED ≠ VERIFIED ≠ ACCEPTED
 - Agent — PREPARE / REASON / EXECUTE / RECORD.
 - Evidence — observable execution.
 - Verification — evidence-backed checking.
-- Reality Check — alignment and verification boundary.
+- Reality Check (RC) — compare human and AI working maps; detect meaning/context divergence.
+- Fact Check (FC) — verify claims, facts, assumptions and evidence.
 - Watchdog — CONTINUE / MONITOR / ESCALATE.
 - UnAiversed — relationships and contextual maps, not truth.
 - WheeAIls — relevance and reminders, not authority.
