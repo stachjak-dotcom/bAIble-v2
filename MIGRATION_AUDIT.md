@@ -4,34 +4,29 @@ Status: WORKING AUDIT
 
 This audit checks migration claims against the actual current v2 repository.
 
-## Explicit contradictions
+## Corrected contradictions
 
-### C-001 — Role restoration is incomplete
-**Claim:** the migration audit says v0.1 roles were restored explicitly in `AGENT_ROLES.md`.
+### C-001 — Original role restoration
+**Historical problem:** the migration audit claimed v0.1 roles were restored, while the active role file at that time exposed only newer system/coordination roles.
 
-**Current evidence:** the active v2 file defines Human, bAIble, rAIda, Agent, Reality Check, Fact Check, Watchdog, UnAiversed, WheeAIls and Wolf, but does not separately define the original v0.1 roles Human / Product Owner, Architect, Developer, QA, Reviewer and Documentation Agent.
+**Current state:** CORRECTED. `AGENT_ROLES.md` now explicitly preserves Human / Product Owner, Architect, Developer, QA, Reviewer and Documentation Agent, while keeping coordination/check mechanisms separate.
 
-**Classification:** CONTRADICTED / INCOMPLETE.
+### C-002 — lAInguage restoration
+**Historical problem:** Explore / Propose / Prepare / Implement / Verify / Review existed in preserved material but was not initially exposed as a canonical active-v2 language document.
 
-**Resolution:** restore the original roles explicitly while keeping newer coordination/check mechanisms separate.
-
-### C-002 — lAInguage restoration is incomplete in the active path
-**Claim:** Explore / Propose / Prepare / Implement / Verify / Review is restored in v2.
-
-**Current evidence:** it exists in preserved foundation/pre-v2 material, but the active v2 path had no dedicated canonical language document.
-
-**Classification:** PARTIALLY VERIFIED / INCOMPLETE.
-
-**Resolution:** `LANGUAGE.md` now makes it canonical.
+**Current state:** CORRECTED. `LANGUAGE.md` is canonical.
 
 ### C-003 — Reality Check meaning drift
-**Claim:** Reality Check was being used as a general verification mechanism.
+**Historical problem:** Reality Check had gradually been used as a broad factual/evidential verification mechanism even though its original purpose was comparison of the human and AI working maps.
 
-**Current evidence:** provenance review restored its original purpose as comparison of the human and AI working maps. Factual/evidential verification that had accumulated under the same name has been split into `FACT_CHECK.md`.
+**Current state:** CORRECTED IN ACTIVE V2.
 
-**Classification:** MEANING DRIFT IDENTIFIED / CORRECTED IN ACTIVE V2.
+- **Reality Check (RC)** = alignment / interpretation / context divergence.
+- **Fact Check (FC)** = factual and evidential verification.
+- `REALITY_CHECK.md` preserves the original reference meaning and anti-drift test.
+- `FACT_CHECK.md` preserves the useful verification behavior that had accumulated under the RC name.
 
-**Resolution:** RC = alignment / interpretation / context divergence. FC = factual and evidential verification. Historical wording is not treated as proof of the original meaning.
+This correction itself is retained as a concrete forgetting/context-drift case in `LESSONS_LEARNED.md`.
 
 ## Verified observations
 
@@ -45,7 +40,7 @@ This audit checks migration claims against the actual current v2 repository.
 
 `START_HERE.md`, `AGENT_QUICK_START.md`, `ONBOARDING_FLOW.md`, `NEW_USER_AGENT.md`, `BOOTSTRAP.md`, `REPOSITORY_BOOTSTRAP.md` and `WHEEAILS.md` overlap substantially. Their distinct information should be extracted into canonical onboarding, language, bootstrap, role and template documents rather than copied wholesale.
 
-## Principle
+## Principles
 
 A migration document saying something was “fixed” is not proof that the current repository contains the fix. Repository state is the evidence to check.
 
@@ -53,8 +48,8 @@ A surviving term is also not proof that its original meaning survived.
 
 ## Next checks
 
-1. verify original role definitions against v0.1;
-2. compare active v2 navigation with the preserved foundation;
-3. identify dead and duplicate routes;
-4. perform public/private review;
-5. decide what remains history rather than migrating it.
+1. compare active v2 navigation with the preserved foundation;
+2. identify dead and duplicate routes;
+3. perform public/private review;
+4. inspect FederAItion and UnAiversed for concepts absent from v2;
+5. run contradiction and meaning-drift scan again after consolidation.
