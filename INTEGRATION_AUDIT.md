@@ -31,32 +31,39 @@ This audit checks whether the living v2 captures the useful public foundation, t
 
 ## Important contradictions / open alignment work
 
-### C-001 — Reality Check runtime semantics lag governance
-Public v2 now defines RC as map alignment and FC as factual/evidential checking. FederAItion runtime historically combined some evidence checks under Reality Check.
+### C-001 — Reality Check / Fact Check runtime alignment
+Public v2 defines RC as map/meaning alignment and FC as factual/evidential checking.
 
-Status: GOVERNANCE CORRECTED; RUNTIME ALIGNMENT STILL REQUIRES A SEPARATE IMPLEMENTATION CHANGE AND TEST.
+FederAItion runtime now implements the split explicitly: Fact Check evaluates evidence separately before Reality Check performs context/meaning/perspective alignment.
+
+Status: RESOLVED IN PRIVATE RUNTIME. Runtime `36352479421` and smoke `36352479449` passed after the alignment change.
 
 ### C-002 — UnAiversed naming / representation split
-FederAItion currently contains both `unAiversed/` and `unAIversed/` paths with related but different material.
+FederAItion still preserves both historical spellings, but their roles are now explicit.
 
-One line represents the human/AI map and session-history direction; the other contains the graph-record implementation, JSON-LD relation model and rAIda bridge.
+- `unAIversed/` = canonical active graph/runtime implementation.
+- `unAiversed/` = historical/session evidence retained for provenance and meaning recovery.
 
-Status: NOT SILENTLY RESOLVED. Public v2 generalizes both as one UnAiversed concept and records the semantic model. Private cleanup should preserve evidence before any rename or merge.
+Status: RESOLVED WITHOUT DESTRUCTIVE MERGE. Historical evidence remains distinguishable from the active implementation.
 
 ### C-003 — Old migration documents can outlive current structure
 Migration documents are useful evidence, but the current README/navigation must remain authoritative for the living public path.
 
 Status: CONTROLLED BY CURRENT NAVIGATION + SELF-AUDIT.
 
-### C-004 — Current push dispatcher selects the lexicographically last queue file
-During the bounded bAIble-v2 verification request, a newly added queue task was not executed because the push workflow selects `readdirSync(...).sort().pop()`. A legacy lowercase filename sorted after the intended uppercase task and was executed instead.
+### C-004 — Historical lexicographic queue dispatcher
+The earlier dispatcher selected the lexicographically last ambient queue file and could execute the wrong task.
 
-Status: OBSERVED AND REPRODUCED. The intended task was later explicitly made last in the current ordering and successfully executed. The dispatcher selection rule remains a private runtime design issue to fix separately.
+The current active path is graph-only: queue is transport/projection, historical ambient queue files were removed, direct queue tasks are blocked by default, and Watchdog continuation derives from the persisted process graph.
 
-### C-005 — Named verifier role was not defined in the runtime role registry
-The first intended task run reached the correct queue item but failed preflight because `rAIda verifier` had no built-in role requirements. Supplying explicit `roleRequirements` preserved the bounded verifier role without modifying runtime role definitions.
+Status: RESOLVED. Current graph-only runtime and smoke passed in `36352014399` and `36352014421`.
 
-Status: OBSERVED; BOUNDED TASK CORRECTED. General role-registration design remains private runtime work.
+### C-005 — Named verifier role registry
+The historical runtime required inline `roleRequirements` because `rAIda verifier` was not registered.
+
+The role is now built in with the same explicit preparation requirements as the verifier tasks already exercised.
+
+Status: RESOLVED IN PRIVATE RUNTIME. Regression passed in `36352479421` / `36352479449`.
 
 ## Epistemic rule
 
