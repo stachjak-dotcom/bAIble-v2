@@ -1,5 +1,7 @@
 # bAIble v2
 
+Status: **ECOSYSTEM BASELINE COMPLETE — living system**
+
 The living public governance layer for disciplined human–AI work.
 
 ## Core loop
