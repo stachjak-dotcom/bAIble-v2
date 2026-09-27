@@ -29,7 +29,22 @@ A useful Reality Check can show, when relevant:
 
 A compact form is:
 
-`HUMAN MAP ↔ AI WORKING MAP → AGREEMENT / DIVERGENCE / MISSING CONTEXT → NEXT CHECK`
+`AI WORKING MAP → HUMAN CONFIRM / CORRECT / REFINE → AGREEMENT / DIVERGENCE / MISSING CONTEXT → NEXT CHECK`
+
+## Completion condition
+
+An AI-generated summary of its own understanding is **not** a completed Reality Check.
+
+It is only the AI-side projection.
+
+Reality Check is complete enough to rely on only when one of these is explicit:
+- the human confirms the material interpretation;
+- the human corrects/refines it and the AI updates its map;
+- a remaining divergence is explicitly preserved as unresolved and bounded so work does not silently depend on it.
+
+`AI PROJECTION ≠ HUMAN–AI ALIGNMENT`
+
+If the human has not yet had a meaningful chance to confirm or correct the map, do not report alignment as established.
 
 ## Verification is downstream, not the definition
 
