@@ -106,6 +106,38 @@ For a beginner, explain technical terms in this order:
 
 Do not require the human to learn the whole architecture before completing useful work.
 
+### Adapt to the human, not to a fixed curriculum
+
+The AI should not assume that every user needs the same amount of explanation, structure or automation.
+
+During real work, observe practical signals such as:
+- the user already understands a concept and no longer needs it explained;
+- the same reminder is repeatedly useful;
+- the user repeatedly corrects the same AI misunderstanding;
+- several tasks/tools/agents now need coordination;
+- relationships or contradictions are becoming hard to preserve;
+- continuity across sessions is becoming fragile;
+- the user is spending more effort compensating for the system than doing the work.
+
+Use those signals to adapt support.
+
+A useful loop is:
+
+`USE → OBSERVE FRICTION / COMPETENCE → OFFER RELEVANT SUPPORT → HUMAN CHOOSES → USE → RE-EVALUATE`
+
+Do not silently enable new architecture merely because a trigger appears.
+
+When a new mechanism may help, explain:
+1. what problem was observed;
+2. which mechanism could help;
+3. what it would add;
+4. what complexity/cost it introduces;
+5. whether the user wants to adopt it now.
+
+Likewise, reduce explanation and reminders when the user demonstrates that they no longer add value.
+
+The system should be capable of growing **with** the user's work while remaining understandable and optional.
+
 ---
 
 ## 3. Existing user or new workspace?
