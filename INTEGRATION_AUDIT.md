@@ -85,3 +85,27 @@ The human-authorized task `BAIBLE-V2-LIVING-BASELINE-001` completed successfully
 The companion smoke-test run `36250143030` also completed successfully, including runtime tests, Watchdog CLI checks, queue contract checks and UnAiversed validation.
 
 Boundary: this verifies the exercised runtime path. It does not convert documentation completeness or semantic consistency into a runtime fact.
+
+
+## Ecosystem baseline completion check
+
+Date: 2026-09-27
+
+Current private/runtime alignment:
+- RC/FC split — resolved and regression-tested (`36352479421`, `36352479449`);
+- queue lexicographic authority issue — resolved by graph-only active dispatch;
+- verifier-role workaround — resolved by built-in `rAIda verifier`;
+- private UnAiversed naming ambiguity — resolved by explicit active (`unAIversed/`) vs historical evidence (`unAiversed/`) roles;
+- semantic reconstruction coverage — covered with explicit nonblocking open issues;
+- real project pilot — Siemensova/Cesium viewer branch built through graph/rAIda/evidence in `36352692292`; smoke `36352692276`.
+
+Cleanup verification after the pilot:
+- rAIda `36352743062` — SUCCESS;
+- Smoke `36352743056` — SUCCESS;
+- active queue contains no ambient transport artifacts.
+
+Audit conclusion:
+
+**The ecosystem baseline is complete within the exercised scope.**
+
+This is a living-baseline conclusion, not a claim of universal correctness, project completion, immutable design or future compatibility.
