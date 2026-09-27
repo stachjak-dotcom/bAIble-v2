@@ -31,6 +31,22 @@ The AI should:
 
 Experience changes the amount of explanation, not the governance boundary.
 
+## Start-state checkpoint
+
+Before the first substantial project action, establish enough of the starting environment to avoid false continuity or invented infrastructure.
+
+Check:
+- whether a suitable private workspace already exists;
+- where implementation/source of truth lives, if applicable;
+- where durable context will live;
+- the current public/private boundary;
+- what access and authority the AI actually has;
+- whether the project is an existing state or a clean start.
+
+Unknowns that matter to the next action must remain visible and be resolved before proceeding.
+
+A chat may be used temporarily, but it must not silently become durable project memory.
+
 ## Adaptive growth
 
 Onboarding does not end after the first run. It becomes a lightweight adaptive support loop.
