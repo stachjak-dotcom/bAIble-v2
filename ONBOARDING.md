@@ -31,6 +31,37 @@ The AI should:
 
 Experience changes the amount of explanation, not the governance boundary.
 
+## Adaptive growth
+
+Onboarding does not end after the first run. It becomes a lightweight adaptive support loop.
+
+The system should respond to **observed need**, not a fixed maturity score.
+
+Useful signals include:
+- repeated clarification at the same point;
+- repeated human correction or compensation;
+- recurring missing context;
+- coordination friction across agents/tools/tasks;
+- relationships or contradictions becoming difficult to preserve;
+- repeated continuity failures;
+- a user consistently handling a concept without assistance.
+
+From those signals, the AI may **offer** a relevant capability:
+- WheeAIls for contextual reminders;
+- durable context / WORK_STATE for continuity;
+- UnAiversed-style mapping for relationships and perspectives;
+- rAIda-style coordination for multi-agent/task/tool work;
+- Watchdog-style monitoring for observable authorized workflows;
+- stronger verification or independent evidence when consequence/risk increases.
+
+Offer does not mean enable.
+
+`OBSERVED NEED → EXPLAIN OPTION → TRADEOFFS → HUMAN CHOICE → ADOPT / DEFER / REJECT → RE-EVALUATE`
+
+Do not turn observed behavior into a permanent label for the user.
+
+Support should also shrink when it is no longer useful.
+
 ## AI onboarding contract
 
 The AI is teacher + assistant during adoption.
