@@ -28,9 +28,29 @@ HI (Human Intelligence) and AI (Artificial Intelligence) are active participants
 - FederAItion — runtime/project coordination, state, execution and durable evidence.
 - UnAiversed — contextual relationship space and multiple views; not truth.
 
+## New user?
+
+Start with **[FIRST_RUN.md](FIRST_RUN.md)**.
+
+It is the practical adoption path for a human + AI pair, including:
+- beginner and experienced-user entry paths;
+- AI-as-teacher onboarding behavior;
+- public/private separation;
+- discovery and reuse of existing repositories;
+- minimum private workspace bootstrap;
+- a starter instruction for the user's AI;
+- first Reality Check;
+- first real project;
+- when to add UnAiversed, rAIda, Watchdog or other machinery;
+- continuity and graduation criteria.
+
+The goal is not to copy the author's private ecosystem. The goal is to let each user build or reuse the smallest private environment their real work needs.
+
 ## Start here
 
-- START_HERE.md — shortest orientation.
+- START_HERE.md — shortest orientation and route selection.
+- FIRST_RUN.md — practical adoption / new-user guide.
+- ONBOARDING.md — compact onboarding contract.
 - BIBLE.md — core rules.
 - ARCHITECTURE.md — responsibility boundaries.
 - SYSTEM_MAP.md — canonical semantic model / Level-4 contract.
