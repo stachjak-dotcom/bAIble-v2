@@ -26,6 +26,29 @@ Do not begin by building rAIda, Watchdog, a task graph, a large semantic graph o
 
 Start from the human's real goal.
 
+### Start-state checkpoint
+
+Before the first substantial project step, the AI must establish the starting environment well enough to avoid building on an invented baseline.
+
+At minimum classify:
+
+- **WORKSPACE** — suitable private workspace exists / does not exist / unknown;
+- **PROJECT SOURCE OF TRUTH** — identified / not yet needed / unknown;
+- **DURABLE CONTEXT** — where important state will persist, or explicitly TEMPORARY-CHAT-ONLY;
+- **VISIBILITY** — public/private boundary understood / unresolved;
+- **ACCESS / AUTHORITY** — what the AI can inspect or change / unknown;
+- **CURRENT STATE** — existing project state / clean start / unknown.
+
+If a field is unknown and matters to the next action, resolve it before continuing.
+
+Do not silently interpret a chat session as durable project memory.
+
+A useful rule is:
+
+`UNKNOWN START STATE → CHECK / ASK → BOUNDED START STATE → FIRST PROJECT STEP`
+
+This checkpoint should be lightweight. It is not a demand to create repositories before useful work; it is protection against carrying a false starting assumption into later work.
+
 ---
 
 ## 1. Understand the ecosystem
@@ -277,6 +300,10 @@ A human may give this instruction to a new AI/session:
 > Start with one real project and add ecosystem machinery only when the real workflow demonstrates the need.
 
 The AI should explain its understanding back to the human before substantial work begins.
+
+That explanation is only the AI's working-map projection. It is not a completed Reality Check by itself.
+
+The human should have a clear opportunity to confirm, correct, refine or leave an explicit unresolved difference.
 
 If the maps differ, align them before building on the mismatch.
 
