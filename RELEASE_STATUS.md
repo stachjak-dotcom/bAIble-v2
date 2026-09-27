@@ -22,15 +22,42 @@ Status model:
 | Wolf | yes | public onboarding contract built | not a software implementation claim | concept only | yes |
 | RC / FC runtime alignment | yes | private runtime aligned | runtime 36352479421 + smoke 36352479449 | bounded behavior verified | yes |
 | UnAiversed private naming consolidation | concept defined | active + historical paths explicitly separated | private cleanup verified by repository inspection | canonical active path is unAIversed; unAiversed retained as history | yes |
+| Local process contracts / rule stack | yes | private runtime built | multi-stage bounded + live tests | versioning/discovery/locked authority path verified | yes |
+| Task/process graph | yes | private runtime built | live graph projection + continuation | graph-only active dispatch verified | yes |
+| Failure / recovery | yes | private runtime built | live fail→retry→recovery chain | original failure preserved; recovered process verified | yes |
+| Reconstructable handoff | yes | private runtime built | restart/reconstruction tests | graph/evidence/rule drift forces reconstruct | yes |
+| Perspective divergence | yes | private runtime built + UnAiversed object model | runtime + UnAiversed tests | preserved/nonblocking vs blocking divergence verified | yes |
+| Semantic reconstruction audit | yes | private runtime built | integration coverage audit | current source inventory covered with explicit open issues | yes |
+| Real project pilot | bounded pilot defined | Siemensova viewer build executor | run 36352692292 + smoke 36352692276 | real viewer branch build passed through graph/rAIda/evidence path | yes |
 
 ## Release claim
 
 The current repository is a **usable living v2 baseline**.
 
-It is not claimed to be immutable, universally validated, or to have every private runtime implementation aligned with every newest governance distinction.
+**Ecosystem baseline status: COMPLETE (2026-09-27).**
+
+It is not claimed to be immutable, universally validated, or to make individual applications/projects complete. "Complete" here means the core ecosystem layers are present, integrated and exercised; deployment hardening and future evolution remain ongoing.
 
 The strongest accurate claim is:
 
 **Public governance, navigation, context/relationship model and coordination boundaries are integrated; the previously recorded RC/FC, queue-dispatch, verifier-role and private UnAiversed path ambiguities are now explicitly resolved in the current private runtime baseline. Remaining gaps are deployment hardening and future evolution, not missing core ecosystem layers.**
 
 A dedicated bounded rAIda task `BAIBLE-V2-LIVING-BASELINE-001` completed successfully in GitHub Actions run `36250143075`. The companion smoke-test run `36250143030` also completed successfully, including the runtime suite, Watchdog CLI smoke checks, queue contract smoke check and UnAiversed validation. This is runtime evidence only; it is not proof that every editorial or semantic claim in the public repository is correct.
+
+
+## Ecosystem baseline completion evidence
+
+The private FederAItion runtime now exercises the public governance boundaries through:
+- scoped/versioned local contracts;
+- authority/trust/provenance checks;
+- graph-only task authority;
+- Watchdog continuation;
+- bounded recovery;
+- reconstructable handoff;
+- perspective divergence;
+- semantic reconstruction coverage;
+- separate Fact Check and Reality Check.
+
+A real project pilot built the Siemensova/Cesium viewer branch through this graph/rAIda/evidence path in run `36352692292`; companion smoke `36352692276` passed.
+
+This evidence supports the baseline-complete claim within the exercised scope. It does not prove browser rendering, building identity, project completion, universal correctness or future compatibility.
