@@ -6,21 +6,32 @@ Shortest route:
 
 `UNDERSTAND → CLASSIFY → PLAN → ACT → VERIFY → ALIGN → LEARN → PERSIST`
 
+## If you are new to bAIble
+
+Start with [FIRST_RUN.md](FIRST_RUN.md).
+
+It is the guided adoption path for both beginners and experienced users. It explains how your AI should orient itself, how to establish or reuse a private workspace, and how to learn bAIble through one real project.
+
+Do not copy somebody else's private ecosystem. Build or reuse only what your own work needs.
+
 ## If you are human
 
 Read:
 1. [ORIGIN_AND_PURPOSE.md](ORIGIN_AND_PURPOSE.md)
-2. [HUMAN_VIEW.md](HUMAN_VIEW.md)
-3. [ECOSYSTEM_MAP.md](ECOSYSTEM_MAP.md)
-4. [SYSTEM_MAP.md](SYSTEM_MAP.md)
-5. [ONBOARDING.md](ONBOARDING.md)
-6. [REALITY_CHECK.md](REALITY_CHECK.md)
-7. [FACT_CHECK.md](FACT_CHECK.md)
-8. [PUBLIC_PRIVATE_BOUNDARY.md](PUBLIC_PRIVATE_BOUNDARY.md)
+2. [FIRST_RUN.md](FIRST_RUN.md)
+3. [HUMAN_VIEW.md](HUMAN_VIEW.md)
+4. [ECOSYSTEM_MAP.md](ECOSYSTEM_MAP.md)
+5. [SYSTEM_MAP.md](SYSTEM_MAP.md)
+6. [ONBOARDING.md](ONBOARDING.md)
+7. [REALITY_CHECK.md](REALITY_CHECK.md)
+8. [FACT_CHECK.md](FACT_CHECK.md)
+9. [PUBLIC_PRIVATE_BOUNDARY.md](PUBLIC_PRIVATE_BOUNDARY.md)
 
 ## If you are an AI / agent
 
-Read:
+For a new human+AI adoption, read [FIRST_RUN.md](FIRST_RUN.md) before substantial work.
+
+Then read:
 1. [BIBLE.md](BIBLE.md)
 2. [AI_VIEW.md](AI_VIEW.md)
 3. [ARCHITECTURE.md](ARCHITECTURE.md)
@@ -31,6 +42,8 @@ Read:
 8. [HANDOFF.md](HANDOFF.md)
 9. [VERIFICATION.md](VERIFICATION.md)
 10. [AGENT_EVALS.md](AGENT_EVALS.md)
+
+Do not assume a new user already has repositories, project memory, Git knowledge or a private runtime. Discover what exists before creating infrastructure.
 
 ## Core distinctions
 
