@@ -29,4 +29,24 @@ Context became addressable with origin, scope, status, visibility, evidence, rel
 ## Ecosystem synthesis
 bAIble, FederAItion and UnAiversed are treated as one ecosystem with different responsibilities, with HI and AI as participating creators rather than subordinate components.
 
+## Ecosystem baseline complete — 2026-09-27
+The ecosystem crossed from foundation-building into living operation.
+
+By this milestone:
+- local process contracts are versioned and resolved by scope;
+- higher-level invariants, authority, trust lifecycle and GitHub provenance are explicit;
+- task/process graph is the active authority source and queue is only transport/projection;
+- Watchdog continuation is graph-based;
+- failure/retry/recovery is bounded and preserves original failure history;
+- handoff is reconstructable from durable state rather than inherited conversation;
+- perspective divergence is first-class and need not be forcibly collapsed;
+- semantic reconstruction coverage is auditable;
+- runtime Reality Check and Fact Check are separated;
+- active vs historical private UnAiversed paths are explicit;
+- a real Siemensova/Cesium viewer build passed through the FederAItion graph/rAIda/evidence workflow.
+
+This milestone means the core ecosystem baseline is functionally complete and usable.
+
+It does **not** mean the ecosystem is immutable or that individual applications/projects are finished. Future evolution is expected to come from real work, evidence and lessons.
+
 These milestones are explanatory anchors, not a full project chronology.
