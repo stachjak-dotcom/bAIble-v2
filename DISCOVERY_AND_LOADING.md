@@ -78,6 +78,20 @@ The worker cannot retrieve repository content.
 State that boundary explicitly. Do not pretend to have inspected bAIble.
 Work only from content actually supplied in the interaction.
 
+## 1a. Entry-route precedence
+
+A convenient onboarding document must not shadow the discovery layer.
+
+For an AI/agent entering from the repository root:
+
+`ROOT / README → DISCOVERY_AND_LOADING → SYSTEM MAP / GRAPH → FIRST_RUN WHEN ADOPTING`
+
+not:
+
+`ROOT / README → FIRST_RUN → ASSUME SETUP`
+
+If the worker reaches `FIRST_RUN.md` first, its section 0 discovery/access gate still applies before setup recommendations.
+
 ## 2. Minimum orientation
 
 For substantial work, a capable agent should be able to discover at least:
