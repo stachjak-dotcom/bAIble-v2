@@ -29,21 +29,34 @@ Read:
 
 ## If you are an AI / agent
 
+First determine what repository/link/file access your environment actually has. Use [DISCOVERY_AND_LOADING.md](DISCOVERY_AND_LOADING.md) as the canonical discovery contract.
+
 For a new human+AI adoption, read [FIRST_RUN.md](FIRST_RUN.md) before substantial work.
 
-Then read:
-1. [BIBLE.md](BIBLE.md)
-2. [AI_VIEW.md](AI_VIEW.md)
-3. [ARCHITECTURE.md](ARCHITECTURE.md)
-4. [AGENT_PROFILE.md](AGENT_PROFILE.md)
-5. [COORDINATION_PROTOCOL.md](COORDINATION_PROTOCOL.md)
-6. [CONTEXT_AND_MEMORY.md](CONTEXT_AND_MEMORY.md)
-7. [WORK_CONTINUITY.md](WORK_CONTINUITY.md)
-8. [HANDOFF.md](HANDOFF.md)
-9. [VERIFICATION.md](VERIFICATION.md)
-10. [AGENT_EVALS.md](AGENT_EVALS.md)
+Establish the shared semantic model early:
+1. [SYSTEM_MAP.md](SYSTEM_MAP.md)
+2. [ECOSYSTEM_GRAPH.json](ECOSYSTEM_GRAPH.json)
+3. [BIBLE.md](BIBLE.md)
+4. [AI_VIEW.md](AI_VIEW.md)
+5. [ARCHITECTURE.md](ARCHITECTURE.md)
+6. [PUBLIC_PRIVATE_BOUNDARY.md](PUBLIC_PRIVATE_BOUNDARY.md)
+
+Then load full mechanism contracts by relevance rather than from a fixed mandatory list. Important routes include:
+- orientation → [WOLF_ONBOARDING.md](WOLF_ONBOARDING.md);
+- coordination → [COORDINATION_PROTOCOL.md](COORDINATION_PROTOCOL.md) + [RUNTIME_AND_WATCHDOG.md](RUNTIME_AND_WATCHDOG.md);
+- human/AI alignment → [REALITY_CHECK.md](REALITY_CHECK.md);
+- factual/evidential grounding → [FACT_CHECK.md](FACT_CHECK.md);
+- repeated support/compensation → [WHEEAILS.md](WHEEAILS.md) + [FAILURE_MODES.md](FAILURE_MODES.md);
+- context/relations → [ECOSYSTEM_MAP.md](ECOSYSTEM_MAP.md) + [RELATIONSHIP_MODEL.md](RELATIONSHIP_MODEL.md) + [CONTEXT_ITEM.md](CONTEXT_ITEM.md);
+- continuity/handoff → [CONTEXT_AND_MEMORY.md](CONTEXT_AND_MEMORY.md) + [WORK_CONTINUITY.md](WORK_CONTINUITY.md) + [HANDOFF.md](HANDOFF.md);
+- completion claims → [VERIFICATION.md](VERIFICATION.md);
+- evaluation → [AGENT_EVALS.md](AGENT_EVALS.md).
+
+If normal repository navigation is restricted, [llms.txt](llms.txt) provides absolute public-source links. Environments that support repository agent instructions may also discover [AGENTS.md](AGENTS.md).
 
 Do not assume a new user already has repositories, project memory, Git knowledge or a private runtime. Discover what exists before creating infrastructure.
+
+Do not equate “not loaded yet” with “not available”.
 
 ## Core distinctions
 
