@@ -54,6 +54,25 @@ A clean-chat agent given the repository and a natural onboarding task performed 
 ### Observation B
 A different agent/environment reported that it could read some explicitly supplied GitHub/raw URLs but could not reliably traverse repository links on its own. It proposed manual raw links/uploads as workarounds.
 
+### Observation C
+After the first discovery-layer integration was merged to `main`, another fresh agent given only the natural repository-start prompt found the repository and `FIRST_RUN.md`, summarized bAIble reasonably, and asked for a real project.
+
+However, it did not show evidence that it had traversed `DISCOVERY_AND_LOADING.md`, `SYSTEM_MAP.md` or `ECOSYSTEM_GRAPH.json` first. It also recommended creating a private repository before determining whether a suitable private workspace already existed, then asked that question afterward.
+
+This is evidence that an easy onboarding route can shadow the discovery route even when the discovery layer exists.
+
+`DISCOVERY IMPLEMENTED ≠ DISCOVERY ENTERED`
+
+and:
+
+`UNKNOWN WORKSPACE → CREATE REPOSITORY`
+
+is an invalid transition.
+
+Expected order:
+
+`CHECK EXISTING → CLASSIFY EXISTS / DOES NOT EXIST / UNKNOWN → REUSE IF SUITABLE → CREATE ONLY IF NEEDED`
+
 ## Evidence
 
 Current evidence is behavioral and limited to the observed runs supplied during development. It is not yet a systematic cross-agent benchmark.
@@ -62,7 +81,11 @@ Current evidence is behavioral and limited to the observed runs supplied during 
 
 A worker may find the repository while still being unable to discover or load the mechanism contracts that give the ecosystem its full meaning.
 
+A second failure class is route shadowing: the worker can access the repository but follows a convenient onboarding path before the capability/discovery map, producing plausible guidance from an incomplete system view.
+
 `REPOSITORY FOUND ≠ ECOSYSTEM DISCOVERABLE`
+
+`DISCOVERY LAYER EXISTS ≠ DISCOVERY LAYER WAS USED`
 
 ## Interpretation
 
