@@ -2,6 +2,18 @@
 
 bAIble is a living public guide for humans and AI working together deliberately.
 
+## Agent discovery gate
+
+If you are an AI / agent, first establish your actual access path using [DISCOVERY_AND_LOADING.md](DISCOVERY_AND_LOADING.md), then inspect [SYSTEM_MAP.md](SYSTEM_MAP.md) and [ECOSYSTEM_GRAPH.json](ECOSYSTEM_GRAPH.json) where accessible.
+
+Do not skip directly to workspace/setup recommendations merely because `FIRST_RUN.md` is easy to find.
+
+Before recommending new infrastructure, resolve at least:
+- what you can actually access;
+- whether a suitable workspace already exists / does not exist / is unknown.
+
+`DISCOVER ACCESS → DISCOVER ECOSYSTEM → CLASSIFY START STATE → RECOMMEND NEXT STEP`
+
 Shortest route:
 
 `UNDERSTAND → CLASSIFY → PLAN → ACT → VERIFY → ALIGN → LEARN → PERSIST`

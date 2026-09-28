@@ -67,9 +67,13 @@ Protection: treat recurrence as a signal to inspect the process.
 ## Capability Discovery Failure
 A useful mechanism exists in the public ecosystem, but the current worker cannot find or load its canonical contract and therefore treats the capability as absent, guesses its meaning, or pushes repeated navigation work onto the human.
 
-Protection: classify actual access capability; preserve DISCOVERABLE / LOADED / ACTIVE / AUTHORIZED distinctions; expose semantic resource routing and bounded fallback adapters; never infer absence from retrieval failure.
+A subtype is **Entry Route Shadowing**: an easy/early onboarding link is followed before the discovery map, so the worker begins acting from a partial view of the ecosystem.
+
+Protection: classify actual access capability; preserve DISCOVERABLE / LOADED / ACTIVE / AUTHORIZED distinctions; expose semantic resource routing and bounded fallback adapters; make discovery precede setup recommendations; never infer absence from retrieval failure.
 
 `CAPABILITY EXISTS ≠ CURRENT WORKER CAN DISCOVER / LOAD IT`
+
+`EASY ENTRY PATH ≠ SUFFICIENT SYSTEM UNDERSTANDING`
 
 ## Memory Inflation
 More stored context increases noise, stale assumptions and retrieval ambiguity.
