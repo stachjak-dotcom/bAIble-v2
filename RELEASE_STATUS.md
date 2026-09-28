@@ -13,7 +13,7 @@ Status model:
 | Core governance | yes | yes | documentation audit | current repo inspected | yes |
 | Human View | yes | yes | navigation/self-audit | links inspected | yes |
 | AI View | yes | yes | activation/discovery eval scenarios defined | repo presence inspected; cross-agent behavior still under evaluation | yes |
-| AI discovery/loading layer | yes | branch implementation + adapters + graph routing | EXP-AI-DISCOVERY-001 defined; repository integrity checks pending | NOT YET cross-agent verified | integration candidate |
+| AI discovery/loading layer | yes | yes — discovery contract, adapters, graph routing, bundle tooling and CI | repository integrity CI passed; EXP-AI-DISCOVERY-001 defined | structurally verified; NOT YET cross-agent behavior verified | yes |
 | Reality Check contract | yes | yes | anti-drift test defined | current public meaning inspected | yes |
 | Fact Check contract | yes | yes | outcome model defined | current public meaning inspected | yes |
 | Context Item / relations | yes | yes | private prototype tests exist | public contract + private evidence partially verified | yes |
@@ -33,7 +33,7 @@ Status model:
 
 ## Release claim
 
-The current `main` repository is a **usable living v2 baseline**. Discovery/loading improvements on `feature/ai-discovery-routing-v1` are an integration candidate until reviewed/merged and cross-agent behavior is tested.
+The current `main` repository is a **usable living v2 baseline**. Capability-aware discovery/loading is now integrated into the public baseline; its repository structure and generation path are verified, while systematic cross-agent behavior remains under evaluation.
 
 **Ecosystem baseline status: COMPLETE (2026-09-27).**
 
