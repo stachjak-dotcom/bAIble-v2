@@ -12,14 +12,15 @@ Status model:
 |---|---|---|---|---|---|
 | Core governance | yes | yes | documentation audit | current repo inspected | yes |
 | Human View | yes | yes | navigation/self-audit | links inspected | yes |
-| AI View | yes | yes | eval scenarios defined | repo presence inspected | yes |
+| AI View | yes | yes | activation/discovery eval scenarios defined | repo presence inspected; cross-agent behavior still under evaluation | yes |
+| AI discovery/loading layer | yes | branch implementation + adapters + graph routing | EXP-AI-DISCOVERY-001 defined; repository integrity checks pending | NOT YET cross-agent verified | integration candidate |
 | Reality Check contract | yes | yes | anti-drift test defined | current public meaning inspected | yes |
 | Fact Check contract | yes | yes | outcome model defined | current public meaning inspected | yes |
 | Context Item / relations | yes | yes | private prototype tests exist | public contract + private evidence partially verified | yes |
 | rAIda public contract | yes | private runtime built | dedicated run 36248402719 passed | bounded runtime behavior verified for the exercised path; editorial work not covered | yes |
 | Watchdog public contract | yes | private runtime built | live tests exist | bounded continuity behavior verified | yes |
-| WheeAIls | yes | public contract built | not a software implementation claim | concept only | yes |
-| Wolf | yes | public onboarding contract built | not a software implementation claim | concept only | yes |
+| WheeAIls | yes | public relevance contract built | activation/relevance evals defined | concept + behavior contract; cross-agent verification pending | yes |
+| Wolf | yes | public onboarding/activation contract built | clean-chat behavioral observation + evals defined | bounded observation only; systematic cross-agent verification pending | yes |
 | RC / FC runtime alignment | yes | private runtime aligned | runtime 36352479421 + smoke 36352479449 | bounded behavior verified | yes |
 | UnAiversed private naming consolidation | concept defined | active + historical paths explicitly separated | private cleanup verified by repository inspection | canonical active path is unAIversed; unAiversed retained as history | yes |
 | Local process contracts / rule stack | yes | private runtime built | multi-stage bounded + live tests | versioning/discovery/locked authority path verified | yes |
@@ -32,7 +33,7 @@ Status model:
 
 ## Release claim
 
-The current repository is a **usable living v2 baseline**.
+The current `main` repository is a **usable living v2 baseline**. Discovery/loading improvements on `feature/ai-discovery-routing-v1` are an integration candidate until reviewed/merged and cross-agent behavior is tested.
 
 **Ecosystem baseline status: COMPLETE (2026-09-27).**
 
