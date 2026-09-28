@@ -129,6 +129,7 @@ The same graph may later generate:
 - Universe View,
 - Human Journey,
 - AI / Agent Journey,
+- **AI Discovery / Capability View**,
 - Builder Architecture,
 - Operational Flow,
 - Verification View,
@@ -136,6 +137,23 @@ The same graph may later generate:
 - Failure View,
 - Onboarding View,
 - Live System View.
+
+The AI Discovery / Capability View should answer:
+- what public capabilities/mechanisms exist;
+- which canonical resource defines each one;
+- what signals make it relevant;
+- what is currently loaded versus merely discoverable;
+- which capabilities are dormant;
+- what the current environment cannot retrieve;
+- what authority is still required before action.
+
+It should support:
+
+`NEED → NODE / RELATION → RESOURCE → LOAD CONTRACT → ACTIVATE IF RELEVANT → CHECK AUTHORITY`
+
+not:
+
+`SHORT AI LIST → EVERYTHING ELSE DISAPPEARS`
 
 These are **not separate truths**.
 
