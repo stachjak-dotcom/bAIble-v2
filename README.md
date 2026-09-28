@@ -28,11 +28,13 @@ HI (Human Intelligence) and AI (Artificial Intelligence) are active participants
 - FederAItion — runtime/project coordination, state, execution and durable evidence.
 - UnAiversed — contextual relationship space and multiple views; not truth.
 
-## New user?
+## AI / agent entry
 
-Start with **[FIRST_RUN.md](FIRST_RUN.md)**.
+If you are an AI / agent, **do not begin from `FIRST_RUN.md` alone**.
 
-## AI / agent discovery
+First use [DISCOVERY_AND_LOADING.md](DISCOVERY_AND_LOADING.md) to establish what you can actually access and how to discover the public ecosystem. Then use [SYSTEM_MAP.md](SYSTEM_MAP.md) + [ECOSYSTEM_GRAPH.json](ECOSYSTEM_GRAPH.json) to understand what capabilities exist and where their canonical contracts live.
+
+Only after that should a new-user adoption continue through [FIRST_RUN.md](FIRST_RUN.md).
 
 bAIble exposes the complete public ecosystem without requiring every agent to preload every document.
 
@@ -47,6 +49,10 @@ Core distinction:
 `DISCOVERABLE ≠ LOADED ≠ ACTIVE ≠ AUTHORIZED`
 
 Relevance controls what should be loaded or activated now. It must not erase the rest of the ecosystem from discovery.
+
+## New human user?
+
+After the AI/agent discovery gate above, continue with **[FIRST_RUN.md](FIRST_RUN.md)**.
 
 It is the practical adoption path for a human + AI pair, including:
 - beginner and experienced-user entry paths;
