@@ -110,7 +110,8 @@ These remain intentionally visible rather than being invented away:
 - the full production implementation of a canonical UnAiversed graph/viewer;
 - how much of relationship metadata should become machine-enforced schema versus documentation contract;
 - exact UI for Human View and AI View;
-- how reminders/relevance are selected automatically;
+- how reminders/relevance are selected automatically across different agent environments;
+- how a generated single-file context bundle should be distributed without becoming a second truth store;
 - which checks require independent evidence in each project domain;
 - how living public bAIble releases are versioned without turning history into the main navigation.
 
@@ -140,6 +141,22 @@ UnAiversed is a relationship/context space, not automatic truth.
 
 Resolution:
 truth/authority must come from appropriate evidence, decision authority and verification, not storage location.
+
+### C-004 — available capability versus discoverable capability
+A mechanism may exist in the ecosystem but remain operationally invisible when an AI environment cannot navigate from the repository entry point to its canonical contract.
+
+Current rule:
+`DISCOVERABLE ≠ LOADED ≠ ACTIVE ≠ AUTHORIZED`.
+
+Resolution:
+- expose the complete public ecosystem through the semantic graph;
+- attach navigation/resource metadata to relevant nodes;
+- publish thin environment adapters such as `llms.txt` and `AGENTS.md`;
+- load full contracts by relevance;
+- never treat a discovery adapter as the canonical definition;
+- never treat access/loading as authority.
+
+See `DISCOVERY_AND_LOADING.md` and `experiments/AI_DISCOVERY_001.md`.
 
 ## 9. Migration discipline
 
