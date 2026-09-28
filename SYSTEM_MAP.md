@@ -119,6 +119,26 @@ This document defines the canonical semantic model. `ECOSYSTEM_GRAPH.json` is it
 
 The graph is canonical; visualizations are views.
 
+## Discovery and resource routing
+
+The graph also carries **navigation metadata** so capable AI/agent environments can discover the full public ecosystem and retrieve the canonical contract behind a relevant node.
+
+Resource pointers and routing hints do not redefine mechanism meaning and do not grant authority.
+
+Use:
+
+`CURRENT NEED → RELEVANT NODE / RELATION → RESOURCE POINTER → LOAD CANONICAL CONTRACT → APPLY WITHIN AUTHORITY`
+
+Preserve:
+
+`DISCOVERABLE ≠ LOADED ≠ ACTIVE ≠ AUTHORIZED`
+
+A dormant mechanism should remain discoverable. A loaded mechanism should remain dormant when its trigger does not apply. An active behavior still does not imply permission for consequential action or new infrastructure.
+
+If a resource pointer is broken or inaccessible, mark the contract unavailable/stale rather than inferring its full meaning from the node label.
+
+See `DISCOVERY_AND_LOADING.md`.
+
 A relation should be explicit rather than inferred from proximity.
 
 Suggested relation types:

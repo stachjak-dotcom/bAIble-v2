@@ -64,6 +64,13 @@ A human learns to compensate for recurring AI failure so the system appears reli
 
 Protection: treat recurrence as a signal to inspect the process.
 
+## Capability Discovery Failure
+A useful mechanism exists in the public ecosystem, but the current worker cannot find or load its canonical contract and therefore treats the capability as absent, guesses its meaning, or pushes repeated navigation work onto the human.
+
+Protection: classify actual access capability; preserve DISCOVERABLE / LOADED / ACTIVE / AUTHORIZED distinctions; expose semantic resource routing and bounded fallback adapters; never infer absence from retrieval failure.
+
+`CAPABILITY EXISTS ≠ CURRENT WORKER CAN DISCOVER / LOAD IT`
+
 ## Memory Inflation
 More stored context increases noise, stale assumptions and retrieval ambiguity.
 

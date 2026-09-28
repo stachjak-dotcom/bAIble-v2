@@ -12,15 +12,20 @@ The goal is to use the public bAIble as shared governance, establish an appropri
 
 ---
 
-## 0. Start with orientation, not infrastructure
+## 0. Start with orientation, discovery and access — not infrastructure
 
 Before creating or changing anything, the AI should:
 
-1. read `START_HERE.md`, `BIBLE.md`, `PUBLIC_PRIVATE_BOUNDARY.md`, `HUMAN_VIEW.md` and `AI_VIEW.md`;
-2. inspect only the additional documents relevant to the current task;
-3. explain the system back to the human in plain language;
-4. identify what already exists;
-5. run a short Reality Check if the human and AI may be using the same terms differently.
+1. determine what repository/link/file access the current environment actually has;
+2. use `DISCOVERY_AND_LOADING.md` to choose an access path;
+3. establish the shared ecosystem map from `SYSTEM_MAP.md` and `ECOSYSTEM_GRAPH.json` where accessible;
+4. read `BIBLE.md`, `PUBLIC_PRIVATE_BOUNDARY.md`, `HUMAN_VIEW.md` and `AI_VIEW.md`;
+5. inspect the full contract of additional mechanisms when they become relevant;
+6. explain the system back to the human in plain language;
+7. identify what already exists;
+8. run a short Reality Check if the human and AI may be using the same terms differently.
+
+If repository navigation is restricted, use the published discovery adapters rather than pretending the remaining ecosystem is absent.
 
 Do not begin by building rAIda, Watchdog, a task graph, a large semantic graph or several repositories.
 
@@ -146,20 +151,37 @@ Use those signals to adapt support.
 
 A useful loop is:
 
-`USE → OBSERVE FRICTION / COMPETENCE → OFFER RELEVANT SUPPORT → HUMAN CHOOSES → USE → RE-EVALUATE`
+`USE → OBSERVE FRICTION / COMPETENCE → DISCOVER RELEVANT CAPABILITY → LOAD ITS CONTRACT → APPLY LIGHTWEIGHT BEHAVIOR / OFFER INFRASTRUCTURE → RE-EVALUATE`
 
-Do not silently enable new architecture merely because a trigger appears.
+Distinguish **existing governance behavior** from **new infrastructure**.
 
-When a new mechanism may help, explain:
+If an existing bAIble behavior is relevant and within current authority, the AI may apply its smallest sufficient form without waiting for the human to remember its name.
+
+Examples:
+- orient using Wolf behavior;
+- coordinate dependencies using rAIda behavior;
+- surface one relevant WheeAIls reminder;
+- use Reality Check / Fact Check / Verification when their triggers apply;
+- classify continuity using Watchdog behavior where observable authorized state exists.
+
+Do not silently adopt new infrastructure merely because a trigger appears.
+
+When persistent machinery may help, explain:
 1. what problem was observed;
-2. which mechanism could help;
+2. which infrastructure could help;
 3. what it would add;
 4. what complexity/cost it introduces;
 5. whether the user wants to adopt it now.
 
+`BEHAVIOR MAY ACTIVATE → INFRASTRUCTURE REMAINS A SEPARATE CHOICE`
+
 Likewise, reduce explanation and reminders when the user demonstrates that they no longer add value.
 
 The system should be capable of growing **with** the user's work while remaining understandable and optional.
+
+A capability that is not needed now should remain discoverable. Relevance controls loading and activation, not existence.
+
+`DISCOVERABLE ≠ LOADED ≠ ACTIVE ≠ AUTHORIZED`
 
 ---
 

@@ -1,0 +1,38 @@
+name: Discovery Contract Checks
+
+on:
+  push:
+    branches: ["main", "feature/**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  discovery-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate discovery graph and adapters
+        run: python scripts/validate_discovery.py
+
+      - name: Build core single-file AI context bundle
+        run: python scripts/build_ai_context.py --profile core --output dist/BAIBLE_AI_CONTEXT.md
+
+      - name: Build full single-file AI context bundle
+        run: python scripts/build_ai_context.py --profile full --output dist/BAIBLE_AI_CONTEXT_FULL.md
+
+      - name: Upload generated AI context bundles
+        uses: actions/upload-artifact@v4
+        with:
+          name: baible-ai-context
+          path: |
+            dist/BAIBLE_AI_CONTEXT.md
+            dist/BAIBLE_AI_CONTEXT_FULL.md

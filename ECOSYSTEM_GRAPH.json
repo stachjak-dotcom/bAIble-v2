@@ -7,123 +7,270 @@
       "id": "hi",
       "type": "entity",
       "label": "Human Intelligence",
-      "role": "intent, material decisions, acceptance, intervention gates"
+      "role": "intent, material decisions, acceptance, intervention gates",
+      "resources": [
+        "HUMAN_VIEW.md",
+        "FIRST_RUN.md",
+        "REALITY_CHECK.md"
+      ]
     },
     {
       "id": "ai",
       "type": "entity",
       "label": "Artificial Intelligence / Agent",
-      "role": "prepare, reason, execute, record within scope"
+      "role": "prepare, reason, execute, record within scope",
+      "resources": [
+        "DISCOVERY_AND_LOADING.md",
+        "AI_VIEW.md",
+        "AGENT_PROFILE.md",
+        "COORDINATION_PROTOCOL.md"
+      ]
     },
     {
       "id": "baible",
       "type": "system",
       "label": "bAIble",
-      "role": "governance, language, rules, lessons, reusable workflows"
+      "role": "governance, language, rules, lessons, reusable workflows",
+      "resources": [
+        "BIBLE.md",
+        "START_HERE.md",
+        "DISCOVERY_AND_LOADING.md",
+        "FIRST_RUN.md"
+      ]
     },
     {
       "id": "federation",
       "type": "system",
       "label": "FederAItion",
-      "role": "runtime, orchestration, durable evidence, operational state"
+      "role": "runtime, orchestration, durable evidence, operational state",
+      "resources": [
+        "ARCHITECTURE.md",
+        "RUNTIME_AND_WATCHDOG.md",
+        "WORK_CONTINUITY.md"
+      ]
     },
     {
       "id": "unaiversed",
       "type": "system",
       "label": "UnAiversed",
-      "role": "contextual and relational mapping space"
+      "role": "contextual and relational mapping space",
+      "resources": [
+        "ECOSYSTEM_MAP.md",
+        "RELATIONSHIP_MODEL.md",
+        "CONTEXT_ITEM.md",
+        "CONTEXT_AND_MEMORY.md"
+      ],
+      "activation_signals": [
+        "relationships difficult to preserve",
+        "multiple perspectives",
+        "contradictions/context links matter"
+      ]
     },
     {
       "id": "raida",
       "type": "mechanism",
       "label": "rAIda",
-      "role": "THINK / COORDINATE / REMEMBER-TO-CHECK"
+      "role": "THINK / COORDINATE / REMEMBER-TO-CHECK",
+      "resources": [
+        "RUNTIME_AND_WATCHDOG.md",
+        "COORDINATION_PROTOCOL.md",
+        "AGENT_PROFILE.md"
+      ],
+      "activation_signals": [
+        "multiple dependent tasks",
+        "multiple tools/agents",
+        "approval/evidence dependencies",
+        "repeated coordination omissions"
+      ]
     },
     {
       "id": "watchdog",
       "type": "mechanism",
       "label": "Watchdog",
-      "role": "CONTINUE / MONITOR / ESCALATE"
+      "role": "CONTINUE / MONITOR / ESCALATE",
+      "resources": [
+        "RUNTIME_AND_WATCHDOG.md",
+        "WORK_CONTINUITY.md",
+        "HANDOFF.md"
+      ],
+      "activation_signals": [
+        "observable workflow state",
+        "multiple authorized transitions",
+        "continuity across time/workers/tools"
+      ]
     },
     {
       "id": "rc",
       "type": "mechanism",
       "label": "Reality Check",
-      "role": "align human and AI working maps"
+      "role": "align human and AI working maps",
+      "resources": [
+        "REALITY_CHECK.md",
+        "COORDINATION_PROTOCOL.md"
+      ],
+      "activation_signals": [
+        "material ambiguity",
+        "human correction",
+        "scope/meaning change",
+        "possible human/AI map divergence"
+      ]
     },
     {
       "id": "fc",
       "type": "mechanism",
       "label": "Fact Check",
-      "role": "verify claims, facts, assumptions and evidence"
+      "role": "verify claims, facts, assumptions and evidence",
+      "resources": [
+        "FACT_CHECK.md",
+        "COORDINATION_PROTOCOL.md"
+      ],
+      "activation_signals": [
+        "material factual/evidential claim",
+        "conflicting evidence",
+        "stale or missing evidence"
+      ]
     },
     {
       "id": "verification",
       "type": "mechanism",
       "label": "Verification",
-      "role": "check whether required result actually holds"
+      "role": "check whether required result actually holds",
+      "resources": [
+        "VERIFICATION.md",
+        "COORDINATION_PROTOCOL.md"
+      ],
+      "activation_signals": [
+        "material completion/result claim"
+      ]
     },
     {
       "id": "wolf",
       "type": "persona",
       "label": "Wolf",
-      "role": "ORIENT / TEACH / ONBOARD"
+      "role": "ORIENT / TEACH / ONBOARD",
+      "resources": [
+        "WOLF_ONBOARDING.md",
+        "FIRST_RUN.md",
+        "ONBOARDING.md"
+      ],
+      "activation_signals": [
+        "new/unknown environment",
+        "unclear role or terminology",
+        "insufficient orientation",
+        "resumed work without reliable orientation"
+      ]
     },
     {
       "id": "wheeails",
       "type": "mechanism",
       "label": "WheeAIls",
-      "role": "relevant reminders and support, not authority"
+      "role": "relevant reminders and support, not authority",
+      "resources": [
+        "WHEEAILS.md",
+        "FAILURE_MODES.md",
+        "ONBOARDING.md"
+      ],
+      "activation_signals": [
+        "recurring omission",
+        "repeated human reminder",
+        "known failure mode becoming relevant",
+        "approaching boundary"
+      ]
     },
     {
       "id": "evidence",
       "type": "concept",
-      "label": "Evidence"
+      "label": "Evidence",
+      "resources": [
+        "VERIFICATION.md",
+        "FACT_CHECK.md",
+        "PROVENANCE.md"
+      ]
     },
     {
       "id": "context-item",
       "type": "contract",
-      "label": "Context Item"
+      "label": "Context Item",
+      "resources": [
+        "CONTEXT_ITEM.md",
+        "CONTEXT_AND_MEMORY.md",
+        "RELATIONSHIP_MODEL.md"
+      ]
     },
     {
       "id": "handoff",
       "type": "contract",
-      "label": "Handoff"
+      "label": "Handoff",
+      "resources": [
+        "HANDOFF.md",
+        "WORK_CONTINUITY.md"
+      ]
     },
     {
       "id": "public-private",
       "type": "boundary",
-      "label": "Public / Private Boundary"
+      "label": "Public / Private Boundary",
+      "resources": [
+        "PUBLIC_PRIVATE_BOUNDARY.md",
+        "FIRST_RUN.md"
+      ]
     },
     {
       "id": "context-drift",
       "type": "risk",
-      "label": "Context Drift"
+      "label": "Context Drift",
+      "resources": [
+        "FAILURE_MODES.md",
+        "CONTEXT_AND_MEMORY.md"
+      ]
     },
     {
       "id": "meaning-drift",
       "type": "risk",
-      "label": "Meaning Drift"
+      "label": "Meaning Drift",
+      "resources": [
+        "FAILURE_MODES.md",
+        "REALITY_CHECK.md",
+        "LESSONS_LEARNED.md"
+      ]
     },
     {
       "id": "scope-drift",
       "type": "risk",
-      "label": "Scope Drift"
+      "label": "Scope Drift",
+      "resources": [
+        "FAILURE_MODES.md",
+        "AGENT_PROFILE.md",
+        "AI_VIEW.md"
+      ]
     },
     {
       "id": "false-done",
       "type": "risk",
-      "label": "False Done"
+      "label": "False Done",
+      "resources": [
+        "FAILURE_MODES.md",
+        "VERIFICATION.md"
+      ]
     },
     {
       "id": "record-truth",
       "type": "risk",
-      "label": "Record ≠ Truth"
+      "label": "Record ≠ Truth",
+      "resources": [
+        "FAILURE_MODES.md",
+        "CONTEXT_AND_MEMORY.md"
+      ]
     },
     {
       "id": "yellow-no-explanation",
       "type": "risk",
-      "label": "Yellow Without Explanation"
+      "label": "Yellow Without Explanation",
+      "resources": [
+        "FAILURE_MODES.md",
+        "FACT_CHECK.md",
+        "REALITY_CHECK.md"
+      ]
     }
   ],
   "relations": [
@@ -330,7 +477,13 @@
       "fc",
       "verification",
       "watchdog",
-      "scope-drift"
+      "scope-drift",
+      "unaiversed",
+      "wolf",
+      "wheeails",
+      "public-private",
+      "context-drift",
+      "false-done"
     ],
     "builder": [
       "baible",
@@ -341,6 +494,122 @@
       "context-item",
       "evidence",
       "public-private"
+    ],
+    "discovery": [
+      "baible",
+      "ai",
+      "wolf",
+      "wheeails",
+      "raida",
+      "watchdog",
+      "rc",
+      "fc",
+      "verification",
+      "unaiversed",
+      "context-item",
+      "handoff",
+      "public-private",
+      "evidence",
+      "context-drift",
+      "meaning-drift",
+      "scope-drift",
+      "false-done",
+      "record-truth"
     ]
+  },
+  "discovery_rule": "DISCOVERABLE ≠ LOADED ≠ ACTIVE ≠ AUTHORIZED. Resource pointers support navigation; canonical meaning remains in the referenced source contract.",
+  "resource_policy": {
+    "canonical_meaning": "Referenced canonical source files define mechanism meaning; graph resources are navigation metadata.",
+    "missing_resource": "Mark unavailable/stale; do not infer the full contract from node labels.",
+    "loading": "Load by relevance; do not preload everything by default.",
+    "authority": "Loading or discovering a resource never grants action authority."
+  },
+  "routing_hints": {
+    "orientation": {
+      "nodes": [
+        "wolf",
+        "ai"
+      ],
+      "resources": [
+        "WOLF_ONBOARDING.md",
+        "AI_VIEW.md",
+        "FIRST_RUN.md"
+      ]
+    },
+    "human_ai_alignment": {
+      "nodes": [
+        "rc"
+      ],
+      "resources": [
+        "REALITY_CHECK.md"
+      ]
+    },
+    "factual_grounding": {
+      "nodes": [
+        "fc",
+        "evidence"
+      ],
+      "resources": [
+        "FACT_CHECK.md",
+        "PROVENANCE.md"
+      ]
+    },
+    "coordination": {
+      "nodes": [
+        "raida"
+      ],
+      "resources": [
+        "RUNTIME_AND_WATCHDOG.md",
+        "COORDINATION_PROTOCOL.md"
+      ]
+    },
+    "recurring_support": {
+      "nodes": [
+        "wheeails"
+      ],
+      "resources": [
+        "WHEEAILS.md",
+        "FAILURE_MODES.md"
+      ]
+    },
+    "relationship_context": {
+      "nodes": [
+        "unaiversed",
+        "context-item"
+      ],
+      "resources": [
+        "ECOSYSTEM_MAP.md",
+        "RELATIONSHIP_MODEL.md",
+        "CONTEXT_ITEM.md"
+      ]
+    },
+    "continuity": {
+      "nodes": [
+        "watchdog",
+        "handoff"
+      ],
+      "resources": [
+        "RUNTIME_AND_WATCHDOG.md",
+        "WORK_CONTINUITY.md",
+        "HANDOFF.md"
+      ]
+    },
+    "completion": {
+      "nodes": [
+        "verification",
+        "evidence"
+      ],
+      "resources": [
+        "VERIFICATION.md"
+      ]
+    },
+    "public_private": {
+      "nodes": [
+        "public-private"
+      ],
+      "resources": [
+        "PUBLIC_PRIVATE_BOUNDARY.md"
+      ]
+    }
   }
 }

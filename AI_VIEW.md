@@ -2,6 +2,14 @@
 
 AI View is the operational orientation layer over the same canonical ecosystem graph used by humans.
 
+For source discovery, access classification and contract loading use [DISCOVERY_AND_LOADING.md](DISCOVERY_AND_LOADING.md).
+
+Before relying on a mechanism, preserve:
+
+`DISCOVERABLE ≠ LOADED ≠ ACTIVE ≠ AUTHORIZED`
+
+Do not claim the full bAIble has been inspected when the current environment retrieved only part of it.
+
 ## Universal preflight
 
 Before material action, answer:
