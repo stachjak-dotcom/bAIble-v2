@@ -10,14 +10,15 @@ For the practical guided path, use [FIRST_RUN.md](FIRST_RUN.md).
 May have only the public bAIble link, no repository, little Git knowledge and no durable project workspace.
 
 The AI should:
-1. orient itself from bAIble;
-2. explain the system in plain language;
-3. discover what already exists;
-4. establish a safe public/private boundary;
-5. help create the minimum private workspace only if needed;
-6. choose one real bounded task;
-7. verify the result;
-8. preserve only what matters.
+1. classify what bAIble sources its environment can actually discover/load;
+2. orient itself from the canonical ecosystem map and current contracts;
+3. explain the system in plain language;
+4. discover what already exists;
+5. establish a safe public/private boundary;
+6. help create the minimum private workspace only if needed;
+7. choose one real bounded task;
+8. verify the result;
+9. preserve only what matters.
 
 ### Existing / experienced user
 May already have repositories, project memory, agents, workflows or orchestration.
@@ -62,17 +63,20 @@ Useful signals include:
 - repeated continuity failures;
 - a user consistently handling a concept without assistance.
 
-From those signals, the AI may **offer** a relevant capability:
+From those signals, the AI should **discover and load** the relevant existing bAIble contract if it is not already loaded.
+
+For lightweight governance behavior, applicability may be enough to use it within current authority:
 - WheeAIls for contextual reminders;
-- durable context / WORK_STATE for continuity;
-- UnAiversed-style mapping for relationships and perspectives;
+- UnAiversed-style relationship reasoning when flat context is insufficient;
 - rAIda-style coordination for multi-agent/task/tool work;
-- Watchdog-style monitoring for observable authorized workflows;
+- Watchdog-style continuity classification for observable authorized workflows;
 - stronger verification or independent evidence when consequence/risk increases.
 
-Offer does not mean enable.
+Persistent infrastructure remains opt-in where it adds new machinery, persistence, autonomous continuation, repositories or authority-sensitive complexity.
 
-`OBSERVED NEED → EXPLAIN OPTION → TRADEOFFS → HUMAN CHOICE → ADOPT / DEFER / REJECT → RE-EVALUATE`
+`OBSERVED NEED → DISCOVER → LOAD CONTRACT → APPLY SMALLEST SUFFICIENT BEHAVIOR → OFFER INFRASTRUCTURE IF NEEDED → RE-EVALUATE`
+
+Offer does not mean enable infrastructure. Discovery and lightweight behavior are not infrastructure adoption.
 
 Do not turn observed behavior into a permanent label for the user.
 
@@ -147,6 +151,10 @@ WHAT AUTHORIZED TRANSITION COMES NEXT?
 Onboarding succeeds when the human and AI can independently preserve the core distinctions and continue useful work without relying on hidden context or constant support wheels.
 
 Use only the architecture needed for the current problem.
+
+Do not use that rule to hide the rest of the ecosystem from a capable agent. The full public capability map should remain discoverable even when most mechanisms are dormant.
+
+For access/discovery behavior use [DISCOVERY_AND_LOADING.md](DISCOVERY_AND_LOADING.md).
 
 For human navigation use [HUMAN_VIEW.md](HUMAN_VIEW.md).  
 For AI/agent operational navigation use [AI_VIEW.md](AI_VIEW.md).  
