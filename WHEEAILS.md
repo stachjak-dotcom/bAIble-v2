@@ -65,16 +65,28 @@ over:
 
 `CONTEXT → MANY REMINDERS → COGNITIVE LOAD`
 
-## Growth boundary
+## Growth and activation boundary
 
-WheeAIls may suggest that a stronger mechanism could help, but they do not activate it.
+WheeAIls may surface that another mechanism is relevant and point the worker to its canonical contract.
+
+They do not acquire that mechanism's authority and do not silently adopt new infrastructure.
+
+Distinguish:
+- **contract discovery / lightweight behavior** — may occur when the situation makes the mechanism relevant and current authority permits it;
+- **infrastructure adoption** — persistent WORK_STATE machinery, graphs, schedulers, autonomous monitoring or other durable systems remain a separate choice.
 
 Examples:
-- repeated context loss may justify offering durable WORK_STATE;
-- complex relationships may justify offering UnAiversed-style mapping;
-- coordination friction may justify offering rAIda-style coordination;
-- observable multi-step continuity may justify offering Watchdog-style monitoring.
+- repeated context loss may trigger a continuity check and justify offering durable WORK_STATE;
+- complex relationships may trigger loading UnAiversed relationship contracts and using lightweight mapping, while persistent graph infrastructure remains optional;
+- coordination friction may trigger rAIda coordination behavior, while a durable rAIda runtime remains optional;
+- observable multi-step continuity may trigger Watchdog-style classification, while autonomous monitoring remains optional.
 
-The user or appropriate authority decides whether to adopt the added mechanism.
+A useful relevance loop is:
+
+`SIGNAL → DISCOVER / LOAD RELEVANT CONTRACT → SMALLEST USEFUL REMINDER OR BEHAVIOR → OBSERVE → ESCALATE INFRASTRUCTURE ONLY IF REAL NEED REMAINS`
+
+If the same human reminder recurs, do not merely repeat it forever. Inspect which guard, contract or activation path failed.
+
+The user or appropriate authority decides whether to adopt added infrastructure or expanded authority.
 
 Support should be removable. If a reminder no longer improves work, stop surfacing it.
