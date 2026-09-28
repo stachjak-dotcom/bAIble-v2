@@ -1,0 +1,44 @@
+# bAIble v2
+
+> Public governance and semantic-navigation ecosystem for disciplined Human + AI work. This file is a discovery adapter, not a canonical source of mechanism meaning.
+
+Repository: https://github.com/stachjak-dotcom/bAIble-v2
+
+## Primary AI entry
+
+- Discovery/loading contract: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/DISCOVERY_AND_LOADING.md
+- Start here: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/START_HERE.md
+- Canonical system map: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/SYSTEM_MAP.md
+- Machine-readable ecosystem graph: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/ECOSYSTEM_GRAPH.json
+- AI operational view: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/AI_VIEW.md
+- Core governance: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/BIBLE.md
+- Public/private boundary: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/PUBLIC_PRIVATE_BOUNDARY.md
+- First-run adoption: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/FIRST_RUN.md
+
+## Mechanism contracts
+
+- Architecture: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/ARCHITECTURE.md
+- Agent profile: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/AGENT_PROFILE.md
+- Coordination protocol: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/COORDINATION_PROTOCOL.md
+- Wolf onboarding: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/WOLF_ONBOARDING.md
+- rAIda / runtime / Watchdog: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/RUNTIME_AND_WATCHDOG.md
+- WheeAIls: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/WHEEAILS.md
+- Reality Check: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/REALITY_CHECK.md
+- Fact Check: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/FACT_CHECK.md
+- Verification: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/VERIFICATION.md
+- Failure modes: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/FAILURE_MODES.md
+- Context and memory: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/CONTEXT_AND_MEMORY.md
+- Context item: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/CONTEXT_ITEM.md
+- Work continuity: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/WORK_CONTINUITY.md
+- Handoff: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/HANDOFF.md
+- Relationship model: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/RELATIONSHIP_MODEL.md
+- Ecosystem / Universe view: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/ECOSYSTEM_MAP.md
+- Agent evals: https://raw.githubusercontent.com/stachjak-dotcom/bAIble-v2/main/AGENT_EVALS.md
+
+## Loading rule
+
+Discoverable does not mean loaded, active or authorized.
+
+Use the semantic map/graph to discover the full public capability space. Load the current canonical contract when a mechanism becomes relevant. Do not infer authority from capability or access.
+
+If normal repository navigation works, prefer the current repository files. Use these absolute raw URLs as an access fallback.
