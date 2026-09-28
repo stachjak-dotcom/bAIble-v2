@@ -33,7 +33,13 @@ Start from the human's real goal.
 
 ### Start-state checkpoint
 
-Before the first substantial project step, the AI must establish the starting environment well enough to avoid building on an invented baseline.
+Before the first substantial project step **or any recommendation to create a repository/workspace**, the AI must establish the starting environment well enough to avoid building on an invented baseline.
+
+Do not recommend “create a private repository” while WORKSPACE is still UNKNOWN.
+
+The order is:
+
+`CHECK EXISTING → CLASSIFY EXISTS / DOES NOT EXIST / UNKNOWN → REUSE IF SUITABLE → CREATE ONLY IF NEEDED`
 
 At minimum classify:
 
@@ -45,6 +51,8 @@ At minimum classify:
 - **CURRENT STATE** — existing project state / clean start / unknown.
 
 If a field is unknown and matters to the next action, resolve it before continuing.
+
+A later question does not repair an earlier recommendation that already assumed the unknown field. Resolve the dependency first.
 
 Do not silently interpret a chat session as durable project memory.
 
