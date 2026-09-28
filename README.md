@@ -32,6 +32,22 @@ HI (Human Intelligence) and AI (Artificial Intelligence) are active participants
 
 Start with **[FIRST_RUN.md](FIRST_RUN.md)**.
 
+## AI / agent discovery
+
+bAIble exposes the complete public ecosystem without requiring every agent to preload every document.
+
+For AI/agent environments:
+- [DISCOVERY_AND_LOADING.md](DISCOVERY_AND_LOADING.md) — canonical discovery/loading contract;
+- [ECOSYSTEM_GRAPH.json](ECOSYSTEM_GRAPH.json) — machine-readable capability and relationship map;
+- [llms.txt](llms.txt) — absolute-link fallback for LLM/web environments;
+- [AGENTS.md](AGENTS.md) — thin repository-instruction adapter for agent environments that support it.
+
+Core distinction:
+
+`DISCOVERABLE ≠ LOADED ≠ ACTIVE ≠ AUTHORIZED`
+
+Relevance controls what should be loaded or activated now. It must not erase the rest of the ecosystem from discovery.
+
 It is the practical adoption path for a human + AI pair, including:
 - beginner and experienced-user entry paths;
 - AI-as-teacher onboarding behavior;
@@ -49,6 +65,8 @@ The goal is not to copy the author's private ecosystem. The goal is to let each 
 ## Start here
 
 - START_HERE.md — shortest orientation and route selection.
+- DISCOVERY_AND_LOADING.md — capability-aware AI discovery, retrieval and loading contract.
+- llms.txt / AGENTS.md — thin discovery adapters; not canonical mechanism definitions.
 - FIRST_RUN.md — practical adoption / new-user guide.
 - ONBOARDING.md — compact onboarding contract.
 - BIBLE.md — core rules.
