@@ -67,6 +67,12 @@ Use the smallest sufficient behavior:
 
 A mechanism may remain silent. Its applicability must not remain unchecked.
 
+### Meaning-critical contract loading
+
+If a mechanism's exact meaning materially affects scope, authority, evidence, blockers, verification or the next authorized transition, load its current canonical contract before relying on the mechanism's name, graph node, adapter, summary or remembered description.
+
+This does not require preloading every discoverable mechanism. If exact mechanism semantics are not material to the decision, keep the mechanism dormant/discoverable and use the smallest sufficient behavior.
+
 ## Behavior is not infrastructure
 
 Applying existing governance behavior is not the same as adopting new architecture.
@@ -79,6 +85,16 @@ Examples:
 - WheeAIls reminder behavior ≠ a new reminder subsystem.
 
 When a trigger applies, use the smallest sufficient behavior within existing authority. Do not silently create durable machinery, repositories, autonomous continuation or expanded authority. Offer those separately when demonstrated need justifies their cost.
+
+### Safe deactivation
+
+Activation is reversible. When a trigger no longer applies, the mechanism may return to a dormant/discoverable state and excess working context may be dropped.
+
+Before reducing active context, preserve any recovery-critical state required by current continuity — such as last verified state, material evidence/provenance, unresolved contradictions or blockers, authority/gates and the exact next authorized transition — in existing continuity artifacts when durable continuation is warranted.
+
+`DEACTIVATED ≠ DELETED ≠ FORGOTTEN`
+
+Do not create durable state for a trivial task solely to record deactivation.
 
 ## AI working loop
 
