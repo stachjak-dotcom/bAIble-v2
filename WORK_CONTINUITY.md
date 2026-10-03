@@ -31,6 +31,14 @@ Update WORK_STATE when a material decision is made, a significant step completes
 
 WORK_STATE is not truth. It is a recovery aid whose claims still require appropriate evidence.
 
+### Active-context reduction
+
+WORK_STATE does not require retaining full active reasoning, every loaded contract or every mechanism that was previously useful.
+
+When material complexity resolves, active working context may shrink. Preserve only the recovery-critical state needed for safe continuation or reconstruction, such as the last verified state, material evidence/provenance, unresolved contradictions or blockers, authority/gates and the exact next authorized action.
+
+If the task does not require durable continuity, do not create or retain WORK_STATE merely to record that a mechanism became dormant.
+
 ## WORK_LOG
 
 An append-only record of significant state changes.
