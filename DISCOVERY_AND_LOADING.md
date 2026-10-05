@@ -29,7 +29,7 @@ An archived source is not absent and is not necessarily false. It is outside nor
 
 ## Purpose
 
-The public ecosystem should expose its full reusable capability map to capable agents while loading only what is relevant now.
+The public ecosystem should expose its full current reusable capability map to capable agents while loading only what is relevant now. Historical or archived material remains retrievable through historical retrieval; it is not part of the normal active capability map merely because it still exists.
 
 Use:
 
@@ -200,7 +200,7 @@ A useful loop is:
 
 `ORIENT → DISCOVER → LOAD RELEVANT CONTRACT → WORK → OBSERVE NEW TRIGGER → DISCOVER / LOAD MORE`
 
-This allows a simple task to remain simple while preserving access to the full ecosystem for capable agents.
+This allows a simple task to remain simple while preserving access to the full current reusable ecosystem for capable agents, with historical material available through explicit historical retrieval when needed.
 
 ## 8. Provenance and version integrity
 
@@ -266,4 +266,4 @@ See `AGENT_EVALS.md` and `experiments/AI_DISCOVERY_001.md`.
 
 ## Design principle
 
-**Expose the whole ecosystem; activate and load by relevance; act only within authority.**
+**Expose the whole current reusable ecosystem; keep historical/archive material retrievable separately; activate and load by relevance; act only within authority.**
