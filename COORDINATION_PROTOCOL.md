@@ -22,6 +22,18 @@ Check, as applicable:
 
 A mechanism may remain dormant when its trigger does not apply.
 
+## Baseline versus specialist behavior
+
+The applicability check operates on top of a lightweight governance substrate that does not become dormant.
+
+At minimum, work should preserve the relevant intent, scope, authority, epistemic state, provenance/source boundary, continuity awareness and transition discipline. The intensity of these checks scales with the task; simple work must not be inflated into ceremony.
+
+Trigger-based mechanisms may activate and later return to dormant state. Their deactivation does not deactivate the baseline discipline.
+
+`ALWAYS-ON CORE → DETECT CONDITION → ACTIVATE SPECIALIST → SPECIALIST MAY RETURN DORMANT`
+
+This distinction must not be used to create another agent, service, runtime layer or mandatory visible checklist.
+
 ## Behavior / infrastructure boundary
 
 Existing governance behavior may activate automatically within current authority.

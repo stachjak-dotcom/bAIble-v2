@@ -15,6 +15,18 @@ A mechanism may be discoverable and understood while remaining dormant.
 A mechanism may become active without creating new infrastructure.
 Knowing or loading a mechanism never grants authority.
 
+### Current versus historical retrieval
+
+Normal discovery should prioritize current/canonical capabilities and sources. Historical or archived material may remain retrievable for provenance, reconstruction, audit or explicit research without participating in ordinary activation.
+
+`ARCHIVED ≠ ACTIVE ≠ CANONICAL ≠ AUTHORIZED`
+
+`ACTIVE DISCOVERY ≠ HISTORICAL RETRIEVAL`
+
+Do not load or activate historical material merely because its name, label or semantics resemble a current mechanism. When current and historical meanings coexist, prefer the current canonical contract for normal work and preserve the historical source only as provenance unless the task explicitly requires reconstruction or comparison.
+
+An archived source is not absent and is not necessarily false. It is outside normal active selection until the task gives a reason to retrieve it.
+
 ## Purpose
 
 The public ecosystem should expose its full reusable capability map to capable agents while loading only what is relevant now.
