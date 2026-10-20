@@ -4,7 +4,7 @@
 Checks are grouped so a failure says which promise broke:
 - discovery: required files, graph resources, routing/view hints, manifest, llms.txt links;
 - vocabulary: graph predicates and node types, failure-mode coverage, blocker lists;
-- repository: every active document is discoverable, no case-only path collisions;
+- repository: every active document is discoverable, relative links resolve, no case-only path collisions;
 - publication: no private run identifiers or private project names in the public repository.
 """
 from __future__ import annotations
@@ -18,8 +18,8 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 REQUIRED = [
-    "README.md", "AGENTS.md", "llms.txt", "BIBLE.md", "DISCOVERY_AND_LOADING.md", "SYSTEM_MAP.md",
-    "PUBLIC_PRIVATE_BOUNDARY.md", "ECOSYSTEM_GRAPH.json", "AI_CONTEXT_MANIFEST.json", "vocabulary.json",
+    "README.md", "AGENTS.md", "llms.txt", "BIBLE.md", "OPERATING.md", "ECOSYSTEM.md",
+    "BOUNDARY.md", "ECOSYSTEM_GRAPH.json", "AI_CONTEXT_MANIFEST.json", "vocabulary.json",
 ]
 
 # Public repository must not carry private runtime identifiers (GitHub Actions run ids)
@@ -132,6 +132,14 @@ def check_repository(manifest: dict, files: list[str], errors: list[str]) -> Non
     for doc in active_documents():
         if doc.name not in listed and doc.name not in NOT_IN_MANIFEST:
             errors.append(f"repository: {doc.name} is an active document but not in AI_CONTEXT_MANIFEST.json")
+    for doc in active_documents() + [ROOT / "history" / "README.md"]:
+        if not doc.is_file():
+            continue
+        for target in re.findall(r"\]\(([^)#\s]+)(?:#[^)]*)?\)", doc.read_text(encoding="utf-8")):
+            if target.startswith(("http://", "https://", "mailto:")):
+                continue
+            if not (doc.parent / target).exists():
+                errors.append(f"repository: {doc.relative_to(ROOT)} links to missing {target}")
     lowered: dict[str, str] = {}
     for path in files:
         key = path.lower()

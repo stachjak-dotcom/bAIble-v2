@@ -1,161 +1,173 @@
-# bAIble v2 — Onboarding
+# bAIble v2 — Onboarding (First Run)
 
-Onboarding is the adaptive path that helps a human + AI pair begin using bAIble without requiring them to copy an existing private ecosystem or learn every mechanism first.
+The practical path for a human + AI pair using bAIble for the first time, whether a beginner with only the public link and no Git knowledge, or an experienced user with repositories, agents and workflows.
 
-For the practical guided path, use [FIRST_RUN.md](FIRST_RUN.md).
+The goal is not to copy somebody else's private ecosystem. It is to use public bAIble as shared governance, set up an appropriate private working environment, and learn the system through one real piece of work.
 
-## Entry modes
+## 0. Orientation and access before infrastructure
 
-### New user
-May have only the public bAIble link, no repository, little Git knowledge and no durable project workspace.
+Before creating or changing anything, the AI should:
 
-The AI should:
-1. classify what bAIble sources its environment can actually discover/load;
-2. orient itself from the canonical ecosystem map and current contracts;
-3. explain the system in plain language;
-4. discover what already exists;
-5. establish a safe public/private boundary;
-6. help create the minimum private workspace only if needed;
-7. choose one real bounded task;
-8. verify the result;
-9. preserve only what matters.
+1. determine what repository, link or file access the environment actually has ([OPERATING.md](OPERATING.md) §1);
+2. establish the shared map from [ECOSYSTEM.md](ECOSYSTEM.md) and the graph where accessible;
+3. read [BIBLE.md](BIBLE.md), [BOUNDARY.md](BOUNDARY.md) and the human view in [README.md](README.md);
+4. load other contracts when they become relevant;
+5. explain the system back to the human in plain language;
+6. identify what already exists;
+7. run a short Reality Check if human and AI may use the same terms differently.
 
-### Existing / experienced user
-May already have repositories, project memory, agents, workflows or orchestration.
+Do not begin by building rAIda, Watchdog, a task graph, a large semantic graph or several repositories. Start from the human's real goal.
 
-The AI should:
-1. inspect the intended roles of existing structures;
-2. map them onto bAIble responsibilities;
-3. avoid duplicate repositories or mechanisms;
-4. identify gaps in scope, authority, evidence, verification, continuity or context;
-5. introduce only the missing mechanisms that solve a demonstrated problem.
+### Start-state checkpoint
+
+Before the first substantial step **or any recommendation to create a repository or workspace**, classify the starting environment. Never recommend "create a private repository" while WORKSPACE is UNKNOWN.
+
+`CHECK EXISTING → CLASSIFY EXISTS / DOES NOT EXIST / UNKNOWN → REUSE IF SUITABLE → CREATE ONLY IF NEEDED`
+
+| Field | Values |
+|---|---|
+| WORKSPACE | suitable private workspace exists / does not exist / unknown |
+| PROJECT SOURCE OF TRUTH | identified / not yet needed / unknown |
+| DURABLE CONTEXT | where important state will persist, or TEMPORARY-CHAT-ONLY |
+| VISIBILITY | public/private boundary understood / unresolved |
+| ACCESS / AUTHORITY | what the AI can inspect or change / unknown |
+| CURRENT STATE | existing project state / clean start / unknown |
+
+If an unknown field matters to the next action, resolve it first. A later question does not repair an earlier recommendation that already assumed the unknown. A chat may be used temporarily, but it must not silently become durable project memory.
+
+`UNKNOWN START STATE → CHECK / ASK → BOUNDED START STATE → FIRST PROJECT STEP`
+
+The checkpoint is lightweight. It is not a demand to create repositories before useful work.
+
+## 1. The AI is teacher and assistant
+
+Before meaningful work, establish as needed: **intent**, **known**, **interpretation**, **unknown**, **scope**, **authority**, **destination** (where information belongs), **evidence**, **verification**, **next authorized step**.
+
+If two plausible interpretations would change the result materially, do not silently choose one.
+
+For a beginner, explain terms as `NAME → PLAIN LANGUAGE → WHY IT MATTERS → SMALLEST EXAMPLE → USE IT`. Do not require the whole architecture before useful work. Do not hide important boundaries behind automation.
+
+**New user:** may have only the public link. Classify access, orient from the map, explain plainly, discover what exists, set a safe public/private boundary, create the minimum private workspace only if needed, choose one bounded task, verify it, keep only what matters.
+
+**Experienced user:** inspect the intended roles of existing structures, map them onto bAIble responsibilities, avoid duplicate repositories or mechanisms, find gaps in scope, authority, evidence, verification, continuity or context, and add only what solves a demonstrated problem.
 
 Experience changes the amount of explanation, not the governance boundary.
 
-## Start-state checkpoint
+### Adapt to the human, not to a fixed curriculum
 
-Before the first substantial project action, establish enough of the starting environment to avoid false continuity or invented infrastructure.
+Watch for signals during real work: the user already understands a concept; the same reminder keeps helping; the same misunderstanding keeps being corrected; several tasks, tools or agents now need coordinating; relationships or contradictions are getting hard to keep; continuity across sessions is fragile; the user spends more effort compensating for the system than doing the work.
 
-Check:
-- whether a suitable private workspace already exists;
-- where implementation/source of truth lives, if applicable;
-- where durable context will live;
-- the current public/private boundary;
-- what access and authority the AI actually has;
-- whether the project is an existing state or a clean start.
+`USE → OBSERVE FRICTION / COMPETENCE → DISCOVER RELEVANT CAPABILITY → LOAD ITS CONTRACT → APPLY LIGHTWEIGHT BEHAVIOUR / OFFER INFRASTRUCTURE → RE-EVALUATE`
 
-Unknowns that matter to the next action must remain visible and be resolved before proceeding.
+Existing behaviour may activate without the human naming it; new infrastructure stays a separate, explained choice ([OPERATING.md](OPERATING.md) §6). Reduce explanation and reminders when they no longer help. Do not turn observed behaviour into a permanent label for the user.
 
-A chat may be used temporarily, but it must not silently become durable project memory.
+## 2. Existing structure or new workspace
 
-## Adaptive growth
+**If suitable private repositories exist,** inspect their roles before creating anything. Ask where durable context lives, where implementation lives, what is public, what is private, who can change each location, and what already serves as current state, evidence, handoff or project state. Prefer reuse over duplication.
 
-Onboarding does not end after the first run. It becomes a lightweight adaptive support loop.
+**If none exists,** start with one private repository (for example `my-private-workspace`). It can hold context, evidence, experiments, lessons and even implementation while the project is small. Split only when scale, security, access or workflow complexity shows the need.
 
-The system should respond to **observed need**, not a fixed maturity score.
+```text
+my-private-workspace/
+├── README.md
+├── CURRENT.md
+├── projects/
+├── context/
+├── evidence/
+├── experiments/
+├── lessons/
+│   └── candidates/
+├── handoffs/
+└── unaiversed/
+```
 
-Useful signals include:
-- repeated clarification at the same point;
-- repeated human correction or compensation;
-- recurring missing context;
-- coordination friction across agents/tools/tasks;
-- relationships or contradictions becoming difficult to preserve;
-- repeated continuity failures;
-- a user consistently handling a concept without assistance.
+A starter shape, not a law. Do not create empty architecture because it appears here.
 
-From those signals, the AI should **discover and load** the relevant existing bAIble contract if it is not already loaded.
+- **README** explains what the workspace is for, that public governance comes from bAIble, that project context, evidence and implementation stay private, and who may change it.
+- **CURRENT** answers: what are we trying to achieve, what is active, what is the last verified state, what is uncertain or blocked, what evidence matters, what is the exact next authorized action. Keep it short: a recovery checkpoint, not a diary and not truth.
 
-For lightweight governance behavior, applicability may be enough to use it within current authority:
-- WheeAIls for contextual reminders;
-- UnAiversed-style relationship reasoning when flat context is insufficient;
-- rAIda-style coordination for multi-agent/task/tool work;
-- Watchdog-style continuity classification for observable authorized workflows;
-- stronger verification or independent evidence when consequence/risk increases.
+## 3. Where information goes
 
-Persistent infrastructure remains opt-in where it adds new machinery, persistence, autonomous continuation, repositories or authority-sensitive complexity.
+| Destination | Holds |
+|---|---|
+| Public bAIble | reusable governance, generic workflows, generalized lessons |
+| Private workspace | context, decisions, evidence, experiments, handoffs, private lessons |
+| Private project / source of truth | implementation and project-specific authoritative artifacts |
+| Secure secret store | credentials, tokens, private keys and secrets |
 
-`OBSERVED NEED → DISCOVER → LOAD CONTRACT → APPLY SMALLEST SUFFICIENT BEHAVIOR → OFFER INFRASTRUCTURE IF NEEDED → RE-EVALUATE`
+These are functional roles, not repository counts. If the destination is unclear, mark it UNKNOWN and resolve it before publishing or committing. Before anything private becomes public: `PRIVATE EXPERIENCE → GENERALIZE → DE-SENSITIZE → VERIFY → REALITY CHECK → PUBLIC CANDIDATE` ([BOUNDARY.md](BOUNDARY.md)).
 
-Offer does not mean enable infrastructure. Discovery and lightweight behavior are not infrastructure adoption.
+## 4. Starter instruction for your AI
 
-Do not turn observed behavior into a permanent label for the user.
+> Use bAIble v2 as the public governance framework for our work.
+>
+> First orient yourself from README.md, OPERATING.md, BIBLE.md and BOUNDARY.md. Use ONBOARDING.md as the adoption path.
+>
+> Do not treat bAIble as project memory and do not copy another person's private ecosystem.
+>
+> Before creating infrastructure, inspect what private repositories or workspaces already exist and reuse suitable structure where possible.
+>
+> Before significant work, identify intent, knowns, interpretation and unknowns; role, scope and authority; the public/private destination; expected evidence and verification; the next authorized action.
+>
+> During work: do not silently guess material requirements; preserve provenance; do not treat records, relations or context as truth; distinguish implementation, verification and acceptance; use Reality Check for human/AI map alignment and Fact Check for factual claims; stop, recover or escalate when context, authority or approval is missing.
+>
+> When work changes hands, use HANDOFF → RECONSTRUCT → CHECK → CONTINUE.
+>
+> Start with one real project and add machinery only when the real workflow shows the need.
 
-Support should also shrink when it is no longer useful.
+The AI then explains its understanding back. That explanation is only the AI's working map, not a completed Reality Check: the human must have a real chance to confirm, correct, refine or leave an explicit open difference.
 
-## AI onboarding contract
+## 5. First Reality Check
 
-The AI is teacher + assistant during adoption.
+**Human map:** What am I trying to achieve? What do I think bAIble will do for me? What already exists? What should stay private? What do I expect the AI to do on its own?
 
-Before meaningful action, establish as needed:
+**AI working map:** What does the AI believe the intent is? What does it think already exists? What is inferred rather than received? What authority does it believe it has? What remains unknown or conflicting?
 
-- intent;
-- known facts;
-- interpretation;
-- unknowns;
-- scope;
-- authority;
-- public/private destination;
-- expected evidence;
-- verification;
-- next authorized transition.
+Classify differences as aligned, missing, different interpretation, different importance, different relation, unresolved or intentionally preserved. A difference is not automatically an error. Full procedure: [REALITY_CHECK.md](REALITY_CHECK.md).
 
-For beginners:
+## 6. One real project
 
-`NAME → PLAIN LANGUAGE → WHY IT MATTERS → SMALLEST EXAMPLE → USE IT`
+Do not learn bAIble only as documentation. Choose one real problem and capture only what is needed: **intent**, **context**, **scope**, **known**, **unknown**, **authority**, **evidence** (what would show success), **next step** (small, authorized, preferably reversible). Then follow the work loop in [BIBLE.md](BIBLE.md).
 
-Do not hide important boundaries behind automation.
+Prefer `EXPLAIN → CONFIRM WHEN NEEDED → DO → VERIFY → RECORD` over long chains of hidden action.
 
-## One useful path
+## 7. Add parts only when reality needs them
 
-1. Start with the human's real goal.
-2. Establish what is known, interpreted and unknown.
-3. Discover existing repositories/workspaces before creating new ones.
-4. Establish public/private destination before substantial project context is collected.
-5. Define role, scope, authority, evidence and verification.
-6. Take one small reversible step.
-7. Verify the actual result.
-8. Run Fact Check when important factual/evidential claims need checking.
-9. Run Reality Check when human and AI maps may differ.
-10. Persist important state, decisions, evidence, handoffs and lessons.
-11. Add more architecture only when reality demonstrates the need.
+| Add | When |
+|---|---|
+| UnAiversed-style mapping | relationships get hard to keep; several perspectives matter; contradictions or uncertainty must stay visible; flat notes no longer explain why things relate |
+| rAIda-style coordination | several agents, tasks or tools need coordinating; role, scope or gates need active enforcement; evidence and verification must be coordinated |
+| Watchdog-style continuity | the workflow has observable state, several authorized transitions exist, and stop/retry/continue/escalate needs explicit rules |
+| Task/process graphs | dependencies matter; several transitions are possible; task existence must be separated from authority; queue order is not enough |
+| WheeAIls | a beginner needs relevant reminders; the same small mistakes recur; support can reduce repeated prompting |
 
-## Levels
+Do not add architecture because it exists in the ecosystem. Add it because a real problem shows the need. Continuity across sessions: [CONTINUITY.md](CONTINUITY.md). Learning without rule inflation: [LEARNING.md](LEARNING.md).
 
-0 — Příchozí: orientation and vocabulary.  
-1 — Pozorovatel: observation vs interpretation.  
-2 — Učeň: rules, scope, authority, evidence and verification.  
-3 — Pracovník: bounded execution and durable evidence.  
-4 — Samostatný agent: prepare, reason, execute and record without crossing gates.  
+## 8. Growth levels
+
+0 — Příchozí: orientation and vocabulary.
+1 — Pozorovatel: observation vs interpretation.
+2 — Učeň: rules, scope, authority, evidence and verification.
+3 — Pracovník: bounded execution and durable evidence.
+4 — Samostatný agent: prepare, reason, execute and record without crossing gates.
 5 — Spolupracovník prostředí: context, handoffs, verification, continuity and improvement.
 
-These levels are orientation aids, not permissions or status claims.
+These are orientation aids, not permissions or status claims. The system responds to observed need, not to a maturity score, and support shrinks when it is no longer useful.
 
-## Universal orientation
+## 9. Signs onboarding succeeded
 
-WHERE AM I?  
-WHAT IS THE INTENT?  
-WHAT IS MY ROLE?  
-WHAT IS IN SCOPE?  
-WHAT AUTHORITY DO I HAVE?  
-WHAT MUST I CHECK?  
-WHAT DO I KNOW?  
-WHAT IS INTERPRETED OR UNKNOWN?  
-WHERE DOES THIS INFORMATION BELONG?  
-WHAT EVIDENCE MUST I PRODUCE?  
-WHO/WHAT VERIFIES IT?  
-DO HUMAN AND AI STILL SHARE THE SAME WORKING MAP?  
-WHAT AUTHORIZED TRANSITION COMES NEXT?
+The human can answer: what bAIble is and is not; what stays public and private; where durable context and implementation live; what the current intent is; what is known versus inferred or unknown; who decides the next material step; what counts as evidence; what Reality Check, Fact Check and Verification are for; how another agent would reconstruct the work; when to add UnAiversed, rAIda or Watchdog; what to do with a reusable lesson.
 
-## Graduation
+The AI can answer the same without pretending private data is public, capability is authority, or documentation is truth. These distinctions matter more than reproducing any particular repository layout.
 
-Onboarding succeeds when the human and AI can independently preserve the core distinctions and continue useful work without relying on hidden context or constant support wheels.
+**Graduation** is not memorizing bAIble. It is working safely without constant support wheels: `GOAL → BOUNDED WORK → EVIDENCE → VERIFY → ALIGN → PRESERVE → CONTINUE`. An experienced user may skip beginner explanations, never the boundaries. Using only the architecture a problem needs must not hide the rest of the ecosystem from a capable agent.
 
-Use only the architecture needed for the current problem.
+## Templates
 
-Do not use that rule to hide the rest of the ecosystem from a capable agent. The full public capability map should remain discoverable even when most mechanisms are dormant.
+Minimal contracts, not mandatory infrastructure. Work state and handoff: [CONTINUITY.md](CONTINUITY.md). Agent scope: Agent Profile in [OPERATING.md](OPERATING.md). Experiment record: [LEARNING.md](LEARNING.md).
 
-For access/discovery behavior use [DISCOVERY_AND_LOADING.md](DISCOVERY_AND_LOADING.md).
+**Project context:** purpose, scope, authoritative sources, constraints, dependencies, out of scope, last verified.
 
-For human navigation use [HUMAN_VIEW.md](HUMAN_VIEW.md).  
-For AI/agent operational navigation use [AI_VIEW.md](AI_VIEW.md).  
-Both derive from the shared semantic model in [SYSTEM_MAP.md](SYSTEM_MAP.md) and [RELATIONSHIP_MODEL.md](RELATIONSHIP_MODEL.md).
+**Project state:** current objective, status, completed, in progress, blocked, known unknowns, next verified action, last updated.
+
+**Decision:** decision ID, decision, question resolved, scope, status, authority, approval, evidence / sources, alternatives, reasoning, assumptions, limitations, verification criteria, review / reversal condition.

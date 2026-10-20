@@ -9,8 +9,8 @@
       "label": "Human Intelligence",
       "role": "intent, material decisions, acceptance, intervention gates",
       "resources": [
-        "HUMAN_VIEW.md",
-        "FIRST_RUN.md",
+        "README.md",
+        "ONBOARDING.md",
         "REALITY_CHECK.md"
       ]
     },
@@ -20,10 +20,7 @@
       "label": "Artificial Intelligence / Agent",
       "role": "prepare, reason, execute, record within scope",
       "resources": [
-        "DISCOVERY_AND_LOADING.md",
-        "AI_VIEW.md",
-        "AGENT_PROFILE.md",
-        "COORDINATION_PROTOCOL.md"
+        "OPERATING.md"
       ]
     },
     {
@@ -33,9 +30,9 @@
       "role": "governance, language, rules, lessons, reusable workflows",
       "resources": [
         "BIBLE.md",
-        "START_HERE.md",
-        "DISCOVERY_AND_LOADING.md",
-        "FIRST_RUN.md"
+        "README.md",
+        "OPERATING.md",
+        "ONBOARDING.md"
       ]
     },
     {
@@ -44,9 +41,9 @@
       "label": "FederAItion",
       "role": "runtime, orchestration, durable evidence, operational state",
       "resources": [
-        "ARCHITECTURE.md",
-        "RUNTIME_AND_WATCHDOG.md",
-        "WORK_CONTINUITY.md"
+        "ECOSYSTEM.md",
+        "RAIDA_WATCHDOG.md",
+        "CONTINUITY.md"
       ]
     },
     {
@@ -55,10 +52,8 @@
       "label": "UnAiversed",
       "role": "contextual and relational mapping space",
       "resources": [
-        "ECOSYSTEM_MAP.md",
-        "RELATIONSHIP_MODEL.md",
-        "CONTEXT_ITEM.md",
-        "CONTEXT_AND_MEMORY.md"
+        "ECOSYSTEM.md",
+        "CONTEXT.md"
       ],
       "activation_signals": [
         "relationships difficult to preserve",
@@ -72,9 +67,8 @@
       "label": "rAIda",
       "role": "THINK / COORDINATE / REMEMBER-TO-CHECK",
       "resources": [
-        "RUNTIME_AND_WATCHDOG.md",
-        "COORDINATION_PROTOCOL.md",
-        "AGENT_PROFILE.md"
+        "RAIDA_WATCHDOG.md",
+        "OPERATING.md"
       ],
       "activation_signals": [
         "multiple dependent tasks",
@@ -89,9 +83,8 @@
       "label": "Watchdog",
       "role": "CONTINUE / MONITOR / ESCALATE",
       "resources": [
-        "RUNTIME_AND_WATCHDOG.md",
-        "WORK_CONTINUITY.md",
-        "HANDOFF.md"
+        "RAIDA_WATCHDOG.md",
+        "CONTINUITY.md"
       ],
       "activation_signals": [
         "observable workflow state",
@@ -106,7 +99,7 @@
       "role": "align human and AI working maps",
       "resources": [
         "REALITY_CHECK.md",
-        "COORDINATION_PROTOCOL.md"
+        "OPERATING.md"
       ],
       "activation_signals": [
         "material ambiguity",
@@ -122,7 +115,7 @@
       "role": "verify claims, facts, assumptions and evidence",
       "resources": [
         "FACT_CHECK.md",
-        "COORDINATION_PROTOCOL.md"
+        "OPERATING.md"
       ],
       "activation_signals": [
         "material factual/evidential claim",
@@ -137,7 +130,7 @@
       "role": "check whether required result actually holds",
       "resources": [
         "VERIFICATION.md",
-        "COORDINATION_PROTOCOL.md"
+        "OPERATING.md"
       ],
       "activation_signals": [
         "material completion/result claim"
@@ -149,8 +142,7 @@
       "label": "Wolf",
       "role": "ORIENT / TEACH / ONBOARD",
       "resources": [
-        "WOLF_ONBOARDING.md",
-        "FIRST_RUN.md",
+        "WOLF.md",
         "ONBOARDING.md"
       ],
       "activation_signals": [
@@ -184,7 +176,7 @@
       "resources": [
         "VERIFICATION.md",
         "FACT_CHECK.md",
-        "PROVENANCE.md"
+        "CONTEXT.md"
       ]
     },
     {
@@ -192,9 +184,7 @@
       "type": "contract",
       "label": "Context Item",
       "resources": [
-        "CONTEXT_ITEM.md",
-        "CONTEXT_AND_MEMORY.md",
-        "RELATIONSHIP_MODEL.md"
+        "CONTEXT.md"
       ]
     },
     {
@@ -202,8 +192,7 @@
       "type": "contract",
       "label": "Handoff",
       "resources": [
-        "HANDOFF.md",
-        "WORK_CONTINUITY.md"
+        "CONTINUITY.md"
       ]
     },
     {
@@ -211,8 +200,8 @@
       "type": "boundary",
       "label": "Public / Private Boundary",
       "resources": [
-        "PUBLIC_PRIVATE_BOUNDARY.md",
-        "FIRST_RUN.md"
+        "BOUNDARY.md",
+        "ONBOARDING.md"
       ]
     },
     {
@@ -221,7 +210,7 @@
       "label": "Context Drift",
       "resources": [
         "FAILURE_MODES.md",
-        "CONTEXT_AND_MEMORY.md"
+        "CONTEXT.md"
       ]
     },
     {
@@ -231,7 +220,7 @@
       "resources": [
         "FAILURE_MODES.md",
         "REALITY_CHECK.md",
-        "LESSONS_LEARNED.md"
+        "LEARNING.md"
       ]
     },
     {
@@ -240,8 +229,7 @@
       "label": "Scope Drift",
       "resources": [
         "FAILURE_MODES.md",
-        "AGENT_PROFILE.md",
-        "AI_VIEW.md"
+        "OPERATING.md"
       ]
     },
     {
@@ -259,7 +247,7 @@
       "label": "Record ≠ Truth",
       "resources": [
         "FAILURE_MODES.md",
-        "CONTEXT_AND_MEMORY.md"
+        "CONTEXT.md"
       ]
     },
     {
@@ -672,7 +660,18 @@
       "meaning-drift",
       "scope-drift",
       "false-done",
-      "record-truth"
+      "record-truth",
+      "yellow-no-explanation",
+      "false-continuity",
+      "activity-substitution",
+      "decision-truth",
+      "agent-echo-chamber",
+      "white-couch",
+      "automation-without-authority",
+      "user-adaptation-hides-failure",
+      "capability-discovery-failure",
+      "memory-inflation",
+      "semantic-smearing"
     ]
   },
   "discovery_rule": "DISCOVERABLE ≠ LOADED ≠ ACTIVE ≠ AUTHORIZED. Resource pointers support navigation; canonical meaning remains in the referenced source contract.",
@@ -689,9 +688,9 @@
         "ai"
       ],
       "resources": [
-        "WOLF_ONBOARDING.md",
-        "AI_VIEW.md",
-        "FIRST_RUN.md"
+        "WOLF.md",
+        "OPERATING.md",
+        "ONBOARDING.md"
       ]
     },
     "human_ai_alignment": {
@@ -709,7 +708,7 @@
       ],
       "resources": [
         "FACT_CHECK.md",
-        "PROVENANCE.md"
+        "CONTEXT.md"
       ]
     },
     "coordination": {
@@ -717,8 +716,8 @@
         "raida"
       ],
       "resources": [
-        "RUNTIME_AND_WATCHDOG.md",
-        "COORDINATION_PROTOCOL.md"
+        "RAIDA_WATCHDOG.md",
+        "OPERATING.md"
       ]
     },
     "recurring_support": {
@@ -736,9 +735,8 @@
         "context-item"
       ],
       "resources": [
-        "ECOSYSTEM_MAP.md",
-        "RELATIONSHIP_MODEL.md",
-        "CONTEXT_ITEM.md"
+        "ECOSYSTEM.md",
+        "CONTEXT.md"
       ]
     },
     "continuity": {
@@ -747,9 +745,8 @@
         "handoff"
       ],
       "resources": [
-        "RUNTIME_AND_WATCHDOG.md",
-        "WORK_CONTINUITY.md",
-        "HANDOFF.md"
+        "RAIDA_WATCHDOG.md",
+        "CONTINUITY.md"
       ]
     },
     "completion": {
@@ -766,7 +763,7 @@
         "public-private"
       ],
       "resources": [
-        "PUBLIC_PRIVATE_BOUNDARY.md"
+        "BOUNDARY.md"
       ]
     }
   },
