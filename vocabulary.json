@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "purpose": "Single canonical home for the closed vocabularies of bAIble v2. Documents explain these terms; they do not redefine them. scripts/validate_discovery.py checks the graph and documents against this file.",
+  "invariants": [
+    {"id": "INV-01", "text": "FOUND ≠ UNDERSTOOD ≠ VERIFIED ≠ CANONICAL"},
+    {"id": "INV-02", "text": "DOCUMENTED ≠ IMPLEMENTED ≠ VERIFIED ≠ ACCEPTED"},
+    {"id": "INV-03", "text": "CONTEXT CONTINUITY ≠ MEANING CONTINUITY"},
+    {"id": "INV-04", "text": "RECORD ≠ TRUTH"},
+    {"id": "INV-05", "text": "DECISION ≠ TRUTH"},
+    {"id": "INV-06", "text": "RELATION ≠ EVIDENCE"},
+    {"id": "INV-07", "text": "AGENT AGREEMENT ≠ INDEPENDENT VERIFICATION"},
+    {"id": "INV-08", "text": "CAPABILITY ≠ AUTHORIZATION"},
+    {"id": "INV-09", "text": "DISCOVERABLE ≠ LOADED ≠ ACTIVE ≠ AUTHORIZED"},
+    {"id": "INV-10", "text": "GOVERNANCE BEHAVIOR ≠ INFRASTRUCTURE ADOPTION"},
+    {"id": "INV-11", "text": "ARCHIVED ≠ ACTIVE ≠ FALSE"},
+    {"id": "INV-12", "text": "DEACTIVATED ≠ DELETED ≠ FORGOTTEN"},
+    {"id": "INV-13", "text": "AI PROJECTION ≠ HUMAN–AI ALIGNMENT"},
+    {"id": "INV-14", "text": "HANDOFF ≠ UNDERSTANDING"}
+  ],
+  "blocking_states": {
+    "MISSING_CONTEXT": "Material context is missing, or the public/private destination is unknown before writing.",
+    "CONFLICT": "A material contradiction is unresolved.",
+    "OUT_OF_SCOPE": "The next step leaves the authorized scope.",
+    "WAITING_HUMAN": "A human decision, approval or map comparison is required.",
+    "AUTHORITY_MISSING": "Nobody has granted authority for the next material action.",
+    "REQUIRED_CHECK_MISSING": "A required check has not actually been performed.",
+    "VERIFY_FAILED": "Verification ran and the required result does not hold.",
+    "STALE_CRITICAL_EVIDENCE": "Evidence the next step depends on may no longer be current.",
+    "NEXT_TRANSITION_UNKNOWN": "The next authorized transition is not explicit."
+  },
+  "terminal_states": {
+    "FAILED": "Work stopped without the required result; the original failure is preserved.",
+    "CANCELLED": "Work was stopped deliberately by an authorized party."
+  },
+  "ladders": {
+    "evidence_strength": ["statement", "observation", "artifact", "test", "independent verification", "acceptance"],
+    "claim_about_capability": ["DOCUMENTED", "AVAILABLE", "DISPATCHED", "OBSERVED", "VERIFIED", "ACCEPTED"],
+    "work_we_build": ["DESIGNED", "BUILT", "TESTED", "VERIFIED", "INTEGRATED", "ACCEPTED"]
+  },
+  "check_outcomes": ["SUPPORTED", "CONTRADICTED", "UNCERTAIN", "MISSING_EVIDENCE", "OUT_OF_SCOPE", "STALE"],
+  "reality_check_states": {
+    "path": ["RC_REQUESTED", "AI_MAP_PREPARED", "AI_MAP_EXPOSED", "HUMAN_MAP_RECEIVED", "DIFFERENCES_COMPARED", "EVIDENCE_RECONCILED", "RC_RESULT"],
+    "results": ["ALIGNED", "ALIGNED_WITH_CORRECTIONS", "OPEN_DIFFERENCES", "NOT_ALIGNED", "INSUFFICIENT_INFORMATION"],
+    "incomplete_exits": ["WAITING_FOR_HUMAN_MAP", "WAITING_FOR_FACT_CHECK", "OPEN_SEMANTIC_DIFFERENCE"]
+  },
+  "context_item": {
+    "types": ["observation", "claim", "interpretation", "decision", "evidence", "lesson", "rule-candidate", "task-context"],
+    "status": ["OBSERVED", "CANDIDATE", "TESTED", "CONFIRMED", "REJECTED", "UNCERTAIN"],
+    "visibility": ["PUBLIC", "PRIVATE", "RESTRICTED"]
+  },
+  "source_classes": ["PUBLIC-SOURCE", "PROJECT-SOURCE", "EXPERIMENT", "GENERALIZED-LESSON", "HUMAN-INPUT", "AGENT-INTERPRETATION", "TOOL-OBSERVATION", "DERIVED", "PRIVATE"],
+  "node_classes": ["entity", "system", "mechanism", "persona", "concept", "contract", "boundary", "risk", "observation", "claim", "interpretation", "decision", "evidence", "verification", "lesson", "rule-candidate", "rule", "task-context", "role", "question", "experiment", "source", "milestone"],
+  "relations": {
+    "participation": ["participatesIn", "createsWith"],
+    "structural": ["contains", "belongsTo", "represents", "linksContextTo", "preserves"],
+    "operational": ["coordinates", "invokes", "observes", "handsOffTo", "monitors", "escalatesTo", "authorizes", "blocks", "requiresHumanDecision", "comparesMapsOf", "surfacesRelevant"],
+    "epistemic": ["supports", "contradicts", "refines", "supersedes", "derivedFrom", "originatedFrom", "appliesTo", "dependsOn", "testedBy", "verifiedBy", "verifies", "producesEvidenceFor"],
+    "governance_learning": ["constrains", "protects", "teaches", "learnsFrom", "remembersToCheck", "exposesRiskTo"]
+  },
+  "action_words": ["Explore", "Propose", "Prepare", "Implement", "Verify", "Review"]
+}

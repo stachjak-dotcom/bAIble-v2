@@ -1,5 +1,7 @@
 # Experiment — AI Discovery 001
 
+> File names in the observations refer to the layout before the 2026-10-20 consolidation (for example `FIRST_RUN.md` is now `ONBOARDING.md`, `DISCOVERY_AND_LOADING.md` and `SYSTEM_MAP.md` are now `OPERATING.md` and `ECOSYSTEM.md`). See `history/README.md`.
+
 ## ID
 
 EXP-AI-DISCOVERY-001

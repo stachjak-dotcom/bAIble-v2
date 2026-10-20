@@ -108,7 +108,7 @@ Evidence supporting this transition includes:
 - perspective divergence;
 - semantic reconstruction coverage audit;
 - cleanup of historical queue authority and explicit active/historical UnAiversed paths;
-- a real Siemensova/Cesium viewer build pilot through FederAItion/rAIda/evidence (run `36352692292`, smoke `36352692276`).
+- a private real-project viewer build pilot through FederAItion/rAIda/evidence (private runtime run + smoke, recorded in FederAItion).
 
 Baseline complete does not freeze the system.
 

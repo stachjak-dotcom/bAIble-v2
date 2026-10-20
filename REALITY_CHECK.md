@@ -46,6 +46,23 @@ Reality Check is complete enough to rely on only when one of these is explicit:
 
 If the human has not yet had a meaningful chance to confirm or correct the map, do not report alignment as established.
 
+## Steps and states
+
+`RC_REQUESTED → AI_MAP_PREPARED → AI_MAP_EXPOSED → HUMAN_MAP_RECEIVED → DIFFERENCES_COMPARED → EVIDENCE_RECONCILED → RC_RESULT`
+
+1. **Prepare** — use Fact Check and an AI-side consistency check as needed. This is preparation, not RC.
+2. **Expose the AI map** — the AI's understanding of the human's goal, criteria and priorities, major assumptions, current conclusion and why it follows, important unknowns.
+3. **Receive the human map** — confirmation, rejection, reweighting, missing meaning, uncertainty or intuitive disagreement. The human does not need equal technical expertise.
+4. **Compare** — classify each difference: fact, meaning, priority, assumption, confidence, unknown on both sides, or aligned.
+5. **Reconcile** — factual differences go to Fact Check; on what the human means or wants, the human has authority; unknowns on both sides stay visible.
+6. **Result** — ALIGNED, ALIGNED_WITH_CORRECTIONS, OPEN_DIFFERENCES, NOT_ALIGNED or INSUFFICIENT_INFORMATION.
+
+Incomplete exits are WAITING_FOR_HUMAN_MAP, WAITING_FOR_FACT_CHECK and OPEN_SEMANTIC_DIFFERENCE. An open difference that the human consciously accepts is recorded with who accepted it, why and when to review it (candidate R-026 in [BIBLE.md](BIBLE.md)).
+
+`RC REQUESTED ≠ RC COMPLETED`
+
+**Before calling an RC complete, ask:** Is my working map visible enough for the human to inspect? Has the human reacted enough to show agreement, disagreement, correction or uncertainty? Did I compare the differences explicitly? Did I separate disagreement about facts from disagreement about meaning or priority? Did the comparison confirm or change the next transition? If any answer is no, RC is still open: record the work as Fact Check or AI-side preparation, not as a completed Reality Check.
+
 ## Verification is downstream, not the definition
 
 Fact checking, evidence review, provenance checks, repository inspection, tests, or other verification may follow a Reality Check **when the discovered divergence requires them**.

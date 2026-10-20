@@ -43,7 +43,7 @@ By this milestone:
 - semantic reconstruction coverage is auditable;
 - runtime Reality Check and Fact Check are separated;
 - active vs historical private UnAiversed paths are explicit;
-- a real Siemensova/Cesium viewer build passed through the FederAItion graph/rAIda/evidence workflow.
+- a private real-project viewer build passed through the FederAItion graph/rAIda/evidence workflow.
 
 This milestone means the core ecosystem baseline is functionally complete and usable.
 
