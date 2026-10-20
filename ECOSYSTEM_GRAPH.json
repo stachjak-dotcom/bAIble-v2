@@ -271,6 +271,86 @@
         "FACT_CHECK.md",
         "REALITY_CHECK.md"
       ]
+    },
+    {
+      "id": "false-continuity",
+      "type": "risk",
+      "label": "False Continuity",
+      "resources": [
+        "FAILURE_MODES.md"
+      ]
+    },
+    {
+      "id": "activity-substitution",
+      "type": "risk",
+      "label": "Activity Substitution",
+      "resources": [
+        "FAILURE_MODES.md"
+      ]
+    },
+    {
+      "id": "decision-truth",
+      "type": "risk",
+      "label": "Decision ≠ Truth",
+      "resources": [
+        "FAILURE_MODES.md"
+      ]
+    },
+    {
+      "id": "agent-echo-chamber",
+      "type": "risk",
+      "label": "Agent Echo Chamber",
+      "resources": [
+        "FAILURE_MODES.md"
+      ]
+    },
+    {
+      "id": "white-couch",
+      "type": "risk",
+      "label": "White-Couch Failure",
+      "resources": [
+        "FAILURE_MODES.md"
+      ]
+    },
+    {
+      "id": "automation-without-authority",
+      "type": "risk",
+      "label": "Automation Without Authority",
+      "resources": [
+        "FAILURE_MODES.md"
+      ]
+    },
+    {
+      "id": "user-adaptation-hides-failure",
+      "type": "risk",
+      "label": "User Adaptation Hides Failure",
+      "resources": [
+        "FAILURE_MODES.md"
+      ]
+    },
+    {
+      "id": "capability-discovery-failure",
+      "type": "risk",
+      "label": "Capability Discovery Failure",
+      "resources": [
+        "FAILURE_MODES.md"
+      ]
+    },
+    {
+      "id": "memory-inflation",
+      "type": "risk",
+      "label": "Memory Inflation",
+      "resources": [
+        "FAILURE_MODES.md"
+      ]
+    },
+    {
+      "id": "semantic-smearing",
+      "type": "risk",
+      "label": "Semantic Smearing",
+      "resources": [
+        "FAILURE_MODES.md"
+      ]
     }
   ],
   "relations": [
@@ -349,7 +429,7 @@
     {
       "id": "r13",
       "subject": "raida",
-      "predicate": "invokesWhenNeeded",
+      "predicate": "invokes",
       "object": "fc"
     },
     {
@@ -453,6 +533,84 @@
       "subject": "yellow-no-explanation",
       "predicate": "exposesRiskTo",
       "object": "rc"
+    },
+    {
+      "id": "r31",
+      "subject": "false-continuity",
+      "predicate": "exposesRiskTo",
+      "object": "handoff"
+    },
+    {
+      "id": "r32",
+      "subject": "activity-substitution",
+      "predicate": "exposesRiskTo",
+      "object": "raida"
+    },
+    {
+      "id": "r33",
+      "subject": "activity-substitution",
+      "predicate": "exposesRiskTo",
+      "object": "watchdog"
+    },
+    {
+      "id": "r34",
+      "subject": "decision-truth",
+      "predicate": "exposesRiskTo",
+      "object": "context-item"
+    },
+    {
+      "id": "r35",
+      "subject": "agent-echo-chamber",
+      "predicate": "exposesRiskTo",
+      "object": "verification"
+    },
+    {
+      "id": "r36",
+      "subject": "white-couch",
+      "predicate": "exposesRiskTo",
+      "object": "fc"
+    },
+    {
+      "id": "r37",
+      "subject": "automation-without-authority",
+      "predicate": "exposesRiskTo",
+      "object": "raida"
+    },
+    {
+      "id": "r38",
+      "subject": "automation-without-authority",
+      "predicate": "exposesRiskTo",
+      "object": "watchdog"
+    },
+    {
+      "id": "r39",
+      "subject": "user-adaptation-hides-failure",
+      "predicate": "exposesRiskTo",
+      "object": "hi"
+    },
+    {
+      "id": "r40",
+      "subject": "user-adaptation-hides-failure",
+      "predicate": "exposesRiskTo",
+      "object": "wheeails"
+    },
+    {
+      "id": "r41",
+      "subject": "capability-discovery-failure",
+      "predicate": "exposesRiskTo",
+      "object": "ai"
+    },
+    {
+      "id": "r42",
+      "subject": "memory-inflation",
+      "predicate": "exposesRiskTo",
+      "object": "unaiversed"
+    },
+    {
+      "id": "r43",
+      "subject": "semantic-smearing",
+      "predicate": "exposesRiskTo",
+      "object": "context-item"
     }
   ],
   "view_hints": {
@@ -611,5 +769,6 @@
         "PUBLIC_PRIVATE_BOUNDARY.md"
       ]
     }
-  }
+  },
+  "vocabulary": "vocabulary.json"
 }
